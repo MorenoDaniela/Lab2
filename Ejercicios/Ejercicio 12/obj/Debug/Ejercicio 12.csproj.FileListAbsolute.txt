@@ -1,0 +1,7 @@
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 12\bin\Debug\Ejercicio 12.exe.config
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 12\bin\Debug\Ejercicio 12.exe
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 12\bin\Debug\Ejercicio 12.pdb
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 12\obj\Debug\Ejercicio 12.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 12\obj\Debug\Ejercicio 12.exe
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 12\obj\Debug\Ejercicio 12.pdb
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 12\obj\Debug\Ejercicio 12.csprojAssemblyReference.cache

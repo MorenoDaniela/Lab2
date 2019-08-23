@@ -1,0 +1,2 @@
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 13\obj\Debug\Ejercicio 13.csprojAssemblyReference.cache
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 13\obj\Debug\Ejercicio 13.csproj.CoreCompileInputs.cache

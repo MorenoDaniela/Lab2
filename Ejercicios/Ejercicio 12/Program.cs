@@ -11,9 +11,11 @@ namespace Ejercicio_12
         static void Main(string[] args)
         {
             char respuesta = 'S';
+            int acumulador = 0;
+
             while (respuesta == 'S')
             {
-                int acumulador = 0;
+                
                 Console.WriteLine("Ingrese un numero: ");
                 string aux = Console.ReadLine();
                 int numero;
@@ -25,13 +27,21 @@ namespace Ejercicio_12
                 ConsoleKeyInfo j = Console.ReadKey();
                 respuesta = j.KeyChar;
 
-                ValidarRespuesta.ValidaS_N(respuesta);
-
-                if (int.TryParse(aux, out numero))
+                if (ValidarRespuesta.ValidaS_N(respuesta))
                 {
-                    acumulador = acumulador + numero;
+                    if (int.TryParse(aux, out numero))
+                    {
+                        acumulador = acumulador + numero;
+                    }
                 }
+                
+
             }
+
+            Console.WriteLine("Suma total: {0}", acumulador);
+
+
+
             Console.ReadKey();
         }
     }
