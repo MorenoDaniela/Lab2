@@ -1,0 +1,7 @@
+D:\MorenoDaniela\Proyecto1\Ejercicio 6\bin\Debug\Ejercicio 6.exe.config
+D:\MorenoDaniela\Proyecto1\Ejercicio 6\bin\Debug\Ejercicio 6.exe
+D:\MorenoDaniela\Proyecto1\Ejercicio 6\bin\Debug\Ejercicio 6.pdb
+D:\MorenoDaniela\Proyecto1\Ejercicio 6\obj\Debug\Ejercicio 6.csprojAssemblyReference.cache
+D:\MorenoDaniela\Proyecto1\Ejercicio 6\obj\Debug\Ejercicio 6.csproj.CoreCompileInputs.cache
+D:\MorenoDaniela\Proyecto1\Ejercicio 6\obj\Debug\Ejercicio 6.exe
+D:\MorenoDaniela\Proyecto1\Ejercicio 6\obj\Debug\Ejercicio 6.pdb

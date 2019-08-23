@@ -1,0 +1,14 @@
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Ejercicio 3\bin\Debug\Ejercicio 3.exe.config
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Ejercicio 3\bin\Debug\Ejercicio 3.exe
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Ejercicio 3\bin\Debug\Ejercicio 3.pdb
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Ejercicio 3\obj\Debug\Ejercicio 3.csprojAssemblyReference.cache
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Ejercicio 3\obj\Debug\Ejercicio 3.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Ejercicio 3\obj\Debug\Ejercicio 3.exe
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Ejercicio 3\obj\Debug\Ejercicio 3.pdb
+D:\MorenoDaniela\Proyecto1\Ejercicio 3\bin\Debug\Ejercicio 3.exe.config
+D:\MorenoDaniela\Proyecto1\Ejercicio 3\bin\Debug\Ejercicio 3.exe
+D:\MorenoDaniela\Proyecto1\Ejercicio 3\bin\Debug\Ejercicio 3.pdb
+D:\MorenoDaniela\Proyecto1\Ejercicio 3\obj\Debug\Ejercicio 3.csprojAssemblyReference.cache
+D:\MorenoDaniela\Proyecto1\Ejercicio 3\obj\Debug\Ejercicio 3.csproj.CoreCompileInputs.cache
+D:\MorenoDaniela\Proyecto1\Ejercicio 3\obj\Debug\Ejercicio 3.exe
+D:\MorenoDaniela\Proyecto1\Ejercicio 3\obj\Debug\Ejercicio 3.pdb

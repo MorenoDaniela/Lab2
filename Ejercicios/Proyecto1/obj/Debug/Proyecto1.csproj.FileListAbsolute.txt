@@ -1,0 +1,7 @@
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Proyecto1\obj\Debug\Proyecto1.csprojAssemblyReference.cache
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Proyecto1\obj\Debug\Proyecto1.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Proyecto1\bin\Debug\Proyecto1.exe.config
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Proyecto1\bin\Debug\Proyecto1.exe
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Proyecto1\bin\Debug\Proyecto1.pdb
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Proyecto1\obj\Debug\Proyecto1.exe
+C:\Users\Pc\Desktop\CSharp\Proyecto1\Proyecto1\obj\Debug\Proyecto1.pdb
