@@ -10,6 +10,8 @@ namespace Ejercicio_9
     {
         static void Main(string[] args)
         {
+            Console.Title = "Ejercicio 9";
+
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Ingrese cantidad de pisos de la piramide: ");
             string pisos = Console.ReadLine();

@@ -10,6 +10,8 @@ namespace Ejercicio_4
     {
         static void Main(string[] args)
         {
+            Console.Title = "Ejercicio 4";
+
             int numero=1000;
             int i;
             int cantidad = 0;

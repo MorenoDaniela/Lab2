@@ -10,6 +10,9 @@ namespace Ejercicio_2
     {
         static void Main(string[] args)
         {
+            Console.Title = "Ejercicio 2";
+
+
             Console.WriteLine("Ingrese un numero: ");
             string aux = Console.ReadLine();
             double numero;

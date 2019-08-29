@@ -10,6 +10,8 @@ namespace Ejercicio_5
     {
         static void Main(string[] args)
         {
+            Console.Title = "Ejercicio 5";
+
             Console.WriteLine("Ingrese un numero: ");
             string aux = Console.ReadLine();
             int numero;

@@ -10,6 +10,8 @@ namespace Ejercicio_6
     {
         static void Main(string[] args)
         {
+            Console.Title = "Ejercicio 6";
+
             Console.WriteLine("Ingrese año de inicio: ");
             string inicio = Console.ReadLine();
             int init;

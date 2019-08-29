@@ -10,6 +10,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.Title = "Ejercicio 11";
+
+
             int numero;
             int i;
             int valorMin = int.MaxValue;//100

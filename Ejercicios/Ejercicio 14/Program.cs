@@ -10,6 +10,8 @@ namespace Ejercicio_14
     {
         static void Main(string[] args)
         {
+            Console.Title = "Ejercicio 14";
+
             double area;
             Console.WriteLine("Ingrese opcion para calcular area: 1 cuadrado, 2 triangulo, 3 circulo: ");
             string aux = Console.ReadLine();

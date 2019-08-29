@@ -10,7 +10,9 @@ namespace Ejercicio_7
     {
         static void Main(string[] args)
         {
-            //Console.Title("Ejercicio n 7");
+            Console.Title= "Ejercicio: 7";
+            
+
 
             Console.WriteLine("Ingrese mes  de nacimiento: ");
             string mes = Console.ReadLine();

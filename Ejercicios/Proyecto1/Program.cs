@@ -10,6 +10,8 @@ namespace Proyecto1
     {
         static void Main(string[] args)
         {
+            Console.Title = "Ejercicio 1";
+
             int i;
             int valorMax = int.MinValue;//0
             int valorMin = int.MaxValue;//100

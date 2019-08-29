@@ -10,7 +10,8 @@ namespace Ejercicio_13
     {
         static void Main(string[] args)
         {
-           
+            Console.Title = "Ejercicio 13";
+
             Console.WriteLine("Opcion 1 para convertir de decimal a binario, 2 para convertir de binario a decimal : ");
             string aux = Console.ReadLine();
             int opcion;

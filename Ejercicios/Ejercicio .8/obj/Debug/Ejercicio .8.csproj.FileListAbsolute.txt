@@ -1,0 +1,7 @@
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio .8\obj\Debug\Ejercicio .8.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio .8\bin\Debug\Ejercicio._8.exe.config
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio .8\bin\Debug\Ejercicio._8.exe
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio .8\bin\Debug\Ejercicio._8.pdb
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio .8\obj\Debug\Ejercicio .8.csprojAssemblyReference.cache
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio .8\obj\Debug\Ejercicio._8.exe
+C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio .8\obj\Debug\Ejercicio._8.pdb
