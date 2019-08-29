@@ -5,3 +5,10 @@ C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 13\bin\Debug\Ejercicio 13.e
 C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 13\bin\Debug\Ejercicio 13.pdb
 C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 13\obj\Debug\Ejercicio 13.exe
 C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 13\obj\Debug\Ejercicio 13.pdb
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 13\bin\Debug\Ejercicio 13.exe.config
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 13\bin\Debug\Ejercicio 13.exe
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 13\bin\Debug\Ejercicio 13.pdb
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 13\obj\Debug\Ejercicio 13.csprojAssemblyReference.cache
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 13\obj\Debug\Ejercicio 13.csproj.CoreCompileInputs.cache
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 13\obj\Debug\Ejercicio 13.exe
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 13\obj\Debug\Ejercicio 13.pdb

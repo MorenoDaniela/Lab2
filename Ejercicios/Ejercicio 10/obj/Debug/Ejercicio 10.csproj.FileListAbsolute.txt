@@ -5,3 +5,10 @@ C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 10\obj\Debug\Ejercicio 10.c
 C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 10\obj\Debug\Ejercicio 10.csproj.CoreCompileInputs.cache
 C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 10\obj\Debug\Ejercicio 10.exe
 C:\Users\Pc\Desktop\CSharp\Lab2\Ejercicios\Ejercicio 10\obj\Debug\Ejercicio 10.pdb
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 10\bin\Debug\Ejercicio 10.exe.config
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 10\bin\Debug\Ejercicio 10.exe
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 10\bin\Debug\Ejercicio 10.pdb
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 10\obj\Debug\Ejercicio 10.csprojAssemblyReference.cache
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 10\obj\Debug\Ejercicio 10.csproj.CoreCompileInputs.cache
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 10\obj\Debug\Ejercicio 10.exe
+D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 10\obj\Debug\Ejercicio 10.pdb

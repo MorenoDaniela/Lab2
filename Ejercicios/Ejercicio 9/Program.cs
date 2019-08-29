@@ -10,24 +10,29 @@ namespace Ejercicio_9
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Ingrese cantidad de pisos de la piramide: ");
             string pisos = Console.ReadLine();
             int cantPisos;
-            
+
             if (int.TryParse(pisos, out cantPisos))
             {
-                if (cantPisos>=1)
+                if (cantPisos >= 1)
                 {
                     int i;
-                    string aux="*";
+                    string aux = "*";
+
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("{0}", aux);
-                    for (i=1;i<cantPisos;i++)
+                    for (i = 1; i < cantPisos; i++)
                     {
                         aux = "**" + aux;
+                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("{0}", aux);
                     }
                 }
             }
+
             Console.ReadKey();
         }
     }
