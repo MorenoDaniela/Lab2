@@ -48,7 +48,7 @@ namespace Ejercicio_13
             return retorno;
         }
 
-
+        /*
         public static double BinarioDecimal(string cadena)
         {
             int retorno = 0;
@@ -58,14 +58,14 @@ namespace Ejercicio_13
             if (pos<8)
             {
                 /*ConsoleKeyInfo j = Console.ReadKey();
-                respuesta = j.KeyChar;*/
+                respuesta = j.KeyChar;
                 if (cadena[pos]=="0")
                 {
 
                 }
             }
-
+        
             
-        }
+        }*/
     }
 }

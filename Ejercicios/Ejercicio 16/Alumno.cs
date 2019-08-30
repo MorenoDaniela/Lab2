@@ -38,6 +38,9 @@ namespace Ejercicio_16
             {
                 this.notaFinal = -1;
             }
+
+            /* system Treading. Tread.Sleep(seg puede ser 150 o 200);
+             * new*/
         }
 
         public void Mostrar()
