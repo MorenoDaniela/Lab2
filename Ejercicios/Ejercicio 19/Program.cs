@@ -11,20 +11,27 @@ namespace Ejercicio_19
     {
         static void Main(string[] args)
         {
-            long a = 10;
-            long b = 20;
-            //string uno = "hola";
-            //string dos = "Daniela";
-
             
-            Sumador resultado = new Sumador();
-            //Sumador cadena = new Sumador();
+            Sumador resultado = new Sumador(2);
+            Sumador resultado2 = new Sumador();
 
-            resultado.Sumar(a, b);
-            //cadena.Sumar(uno, dos);
+            string cadena;
+            long numero;
 
-            Console.WriteLine("{0}", resultado);
-            //Console.WriteLine("Suma num: {0} Concatena {1}", resultado, cadena);
+            //resultado.Sumador(20);
+            //resultado2.Sumador(5);
+
+            numero=resultado.Sumar(10,12);
+            cadena = resultado.Sumar("Hola ", "Daniela");
+            
+
+            Console.WriteLine("{0} // {1}", numero, cadena);
+            Console.WriteLine("{0} // ",resultado + resultado2);
+            Console.WriteLine("{0} //", resultado | resultado2);
+            //Console.WriteLine(resultado.cantidadSumas);
+            //Console.WriteLine(resultado2.cantidadSumas);
+
+
 
             Console.ReadKey();
         }

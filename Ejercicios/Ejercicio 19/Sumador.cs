@@ -8,18 +8,15 @@ namespace Ejercicio_19
 {
     public class Sumador
     {
-        int cantidadSumas;
+        private int cantidadSumas;
 
         public Sumador (int cantidadSumas)
         {
             this.cantidadSumas = cantidadSumas;
         }
 
-        public Sumador()
-        {
-            new Sumador(0);
-
-        }
+        public Sumador() : this(0) { }
+       
 
         public long Sumar(long a, long b)
         {
@@ -31,6 +28,22 @@ namespace Ejercicio_19
         {
             this.cantidadSumas++;
             return a + b;
+        }
+
+        public static long operator +(Sumador sum1, Sumador sum2)
+        {
+            return sum1.cantidadSumas + sum2.cantidadSumas;
+        }
+
+        public static bool operator |(Sumador sum1, Sumador sum2)
+        {
+            bool retorno = false;
+
+            if (sum1.cantidadSumas==sum2.cantidadSumas)
+            {
+                retorno = true;
+            }
+            return retorno;
         }
     }
 }

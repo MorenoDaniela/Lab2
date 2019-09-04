@@ -1,0 +1,23 @@
+1- ¿Qué es el CLR?
+2- Describa el proceso de compilación de C#.
+3- ¿Qué es el CTS?
+4- ¿Qué es un tipo por referencia(Reference Type? ¿En qué se diferencia de un tipo por valor (Value Type)?
+5- Explique las diferencias entre variables escalares y no escalares.
+6- ¿Cuál es el punto de entrada (entry point) para los programas en C#?
+7- ¿Cuál es la diferencia entre una conversión explicita y una implicita?
+8- ¿Para que sirven los modificadores out y ref? ¿En qué se diferencian?
+9- Explique cómo funciona el método TryParse. ¿Qué retorna? ¿Qué recibe? ¿Cuál es la diferencia con el método Parse?
+
+1) 
+2)
+3)Define un conjunto común de "tipos" de datos orientados a objetos. El CTS define tipos de valor y de referencia.
+4)Un tipo referencia es por ejemplo una clase, interfaz, array. string, delegado o otro. Un value type es por ejemplo
+un int16,un byte, un char, un decimal, un boolean, un double etc. 
+//Un tipo por referencia puede tener almacenado en su estructura mas de un valor, un value type es un dato
+atomico.//
+5) Las variables escalares son constantes o variable que contiene un dato atómico y unidimensional.
+Las variables NO ESCALARES son array (vector) lista y objeto, que pueden tener almacenado en su estructura mas de un valor.
+6)El punto de entrada para los programas en C# es la función main.
+7)En una conversión IMPLÍCITA no interviene el programador, en una EXPLICITA interviene el programador ya que puede haber perdida de datos.
+8)
+9)

@@ -5,3 +5,10 @@ C:\Users\Pc\Desktop\Lab2\Ejercicios\Ejercicio 19\bin\Debug\Ejercicio 19.exe
 C:\Users\Pc\Desktop\Lab2\Ejercicios\Ejercicio 19\bin\Debug\Ejercicio 19.pdb
 C:\Users\Pc\Desktop\Lab2\Ejercicios\Ejercicio 19\obj\Debug\Ejercicio 19.exe
 C:\Users\Pc\Desktop\Lab2\Ejercicios\Ejercicio 19\obj\Debug\Ejercicio 19.pdb
+C:\Users\Daniela Moreno\Desktop\Facutad\Lab2\Ejercicios\Ejercicio 19\obj\Debug\Ejercicio 19.csprojAssemblyReference.cache
+C:\Users\Daniela Moreno\Desktop\Facutad\Lab2\Ejercicios\Ejercicio 19\obj\Debug\Ejercicio 19.csproj.CoreCompileInputs.cache
+C:\Users\Daniela Moreno\Desktop\Facutad\Lab2\Ejercicios\Ejercicio 19\obj\Debug\Ejercicio 19.exe
+C:\Users\Daniela Moreno\Desktop\Facutad\Lab2\Ejercicios\Ejercicio 19\obj\Debug\Ejercicio 19.pdb
+C:\Users\Daniela Moreno\Desktop\Facutad\Lab2\Ejercicios\Ejercicio 19\bin\Debug\Ejercicio 19.exe.config
+C:\Users\Daniela Moreno\Desktop\Facutad\Lab2\Ejercicios\Ejercicio 19\bin\Debug\Ejercicio 19.exe
+C:\Users\Daniela Moreno\Desktop\Facutad\Lab2\Ejercicios\Ejercicio 19\bin\Debug\Ejercicio 19.pdb
