@@ -8,7 +8,13 @@
 8- ¿Para que sirven los modificadores out y ref? ¿En qué se diferencian?
 9- Explique cómo funciona el método TryParse. ¿Qué retorna? ¿Qué recibe? ¿Cuál es la diferencia con el método Parse?
 
-1) 
+1) El Common Language Runtime o CLR ("entorno en tiempo de ejecución de lenguaje común") 
+es un entorno de ejecución para los códigos de los programas que corren sobre la plataforma Microsoft .NET. 
+El CLR es el encargado de compilar una forma de código intermedio llamada Common Intermediate Language 
+(CIL, anteriormente conocido como MSIL, por Microsoft Intermediate Language), al código de maquina nativo, 
+mediante un compilador en tiempo de ejecución.1​ No debe confundirse el CLR con una máquina virtual, 
+ya que una vez que el código está compilado, corre nativamente sin intervención de una capa de abstracción sobre el hardware subyacente. 
+Es una implementación del estándar Common Language Infrastructure (CLI).
 2)
 3)Define un conjunto común de "tipos" de datos orientados a objetos. El CTS define tipos de valor y de referencia.
 4)Un tipo referencia es por ejemplo una clase, interfaz, array. string, delegado o otro. Un value type es por ejemplo
@@ -19,5 +25,8 @@ atomico.//
 Las variables NO ESCALARES son array (vector) lista y objeto, que pueden tener almacenado en su estructura mas de un valor.
 6)El punto de entrada para los programas en C# es la función main.
 7)En una conversión IMPLÍCITA no interviene el programador, en una EXPLICITA interviene el programador ya que puede haber perdida de datos.
-8)
-9)
+8) La palabra clave out hace que los argumentos se pasen por referencia. Hace que el parámetro formal sea un alias para el argumento, 
+que debe ser una variable. En otras palabras, cualquier operación en el parámetro se realiza en el argumento. 
+Es como la palabra clave ref, excepto que ref requiere que la variable se inicialice antes de pasarla. 
+9)El método Parse devuelve el número convertido; el método TryParse devuelve un valor Boolean que indica si la conversión se realizó correctamente,
+ y devuelve el número convertido en un parámetro out 
