@@ -4,3 +4,10 @@ D:\Moreno\Lab2\Ejercicios\Repaso\bin\Debug\Repaso.pdb
 D:\Moreno\Lab2\Ejercicios\Repaso\obj\Debug\Repaso.csproj.CoreCompileInputs.cache
 D:\Moreno\Lab2\Ejercicios\Repaso\obj\Debug\Repaso.exe
 D:\Moreno\Lab2\Ejercicios\Repaso\obj\Debug\Repaso.pdb
+C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Repaso\bin\Debug\Repaso.exe.config
+C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Repaso\bin\Debug\Repaso.exe
+C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Repaso\bin\Debug\Repaso.pdb
+C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Repaso\obj\Debug\Repaso.csprojAssemblyReference.cache
+C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Repaso\obj\Debug\Repaso.csproj.CoreCompileInputs.cache
+C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Repaso\obj\Debug\Repaso.exe
+C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Repaso\obj\Debug\Repaso.pdb

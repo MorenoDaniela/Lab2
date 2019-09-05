@@ -31,7 +31,7 @@ namespace Repaso
             string aux = "";
             aux = marca + precio + codigo;
             return aux;*/
-            return string.Format("Codigo: {0} Marca {1} Precio{2}", codigo, marca, precio);
+            return string.Format("Codigo: {0} Marca: {1} Precio: {2}", codigo, marca, precio);
         }
 
         public static explicit operator string (Producto p)

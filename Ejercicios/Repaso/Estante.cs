@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using Producto;
 
 namespace Repaso
 {
     class Estante
     {
-        int ubicacionEstante;
-        Producto [] productos;
+        private int ubicacionEstante;
+        private Producto [] productos;
 
         private Estante (int capacidad)
         {
@@ -18,7 +19,8 @@ namespace Repaso
             //Producto nuevo = new Producto[capacidad];//ESTO NO
         }
 
-        public Estante (int capacidad, int ubicacion) : this (capacidad)
+        public Estante (int capacidad, int ubicacion) 
+            : this (capacidad)
         {
             this.ubicacionEstante = ubicacion;
         }
@@ -28,36 +30,88 @@ namespace Repaso
             return this.productos;
         }
 
-        public string MostrarEstante (Estante e)
+        public static string MostrarEstante (Estante e)
         {
             String.Format("Ubicacion estante: {0} ", e.ubicacionEstante);
+            String.Format("Capacidad: {0}", e.productos.Length);
+            String.Format("PRODUCTOS: ");
             string aux = "";
-            int i;
-
-            for (i=0;i<e.GetProductos().Length;i++)
+            
+            if (!(e is null))
             {
-                aux = aux + e.productos[i].MostrarProducto();
-
-                String.Format("Producto: {0}", aux);
+                foreach (Producto p in e.productos)
+                {
+                    aux = Producto.MostrarProducto(p);
+                }
             }
-
-            //String.Format("Productos: {0}", e.GetProductos);
-
+            return aux;
         }
 
         public static bool operator ==(Estante e, Producto p)
         {
             bool retorno = false;
 
-            if (!(e is null && p is null))
-            {
-                for (int i = 0;i<e.GetProductos().Length;i++)
+           foreach (Producto pro in e.productos)
+           {
+                if (!(pro is null))
+                //if (!object.ReferenceEquals(pro,null))
                 {
-                    if (productos)
+                    if (p==pro)
+                    {
+                        retorno = true;
+                    } 
                 }
-                retorno = true;
+           }
+           return retorno;
+        }
+
+        public static bool operator !=(Estante e, Producto p)
+        {
+            bool retorno = true;
+
+            if (e==p)
+            {
+                retorno = false;
             }
             return retorno;
+        }
+
+        public static bool operator +(Estante e, Producto p)
+        {
+            int i;
+            if (e!=p)
+            {
+                for (i=0;i<e.GetProductos().Length;i++)
+                {
+                    if ((e.productos[i] is null))
+                    //if (object.ReferenceEquals(e.productos[i],null))
+                    {
+                        e.productos[i] = p;
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        public static Estante operator -(Estante e, Producto p)
+        {
+            int i;
+
+            for (i=0;i<e.GetProductos().Length;i++)
+            {
+                if (!(e.productos[i] is null))
+                //if (!object.ReferenceEquals(e.productos[i],null))
+                {
+                    if (p==e.productos[i])
+                    {
+                        e.productos[i] = null;
+                        break;
+                    }
+                }
+            }
+            return e;
+
         }
     }
 }
