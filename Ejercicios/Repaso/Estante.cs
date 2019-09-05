@@ -41,7 +41,7 @@ namespace Repaso
             {
                 foreach (Producto p in e.productos)
                 {
-                    aux = Producto.MostrarProducto(p);
+                    aux = aux + "\n" + Producto.MostrarProducto(p);
                 }
             }
             return aux;
