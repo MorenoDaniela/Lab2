@@ -1,0 +1,6 @@
+D:\Moreno\Lab2\Ejercicios\Ejercicio .8\bin\Debug\Ejercicio._8.exe.config
+D:\Moreno\Lab2\Ejercicios\Ejercicio .8\bin\Debug\Ejercicio._8.exe
+D:\Moreno\Lab2\Ejercicios\Ejercicio .8\bin\Debug\Ejercicio._8.pdb
+D:\Moreno\Lab2\Ejercicios\Ejercicio .8\obj\Debug\Ejercicio 8b.csproj.CoreCompileInputs.cache
+D:\Moreno\Lab2\Ejercicios\Ejercicio .8\obj\Debug\Ejercicio._8.exe
+D:\Moreno\Lab2\Ejercicios\Ejercicio .8\obj\Debug\Ejercicio._8.pdb

@@ -11,3 +11,4 @@ C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Repaso\obj\Debug\Repaso
 C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Repaso\obj\Debug\Repaso.csproj.CoreCompileInputs.cache
 C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Repaso\obj\Debug\Repaso.exe
 C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Repaso\obj\Debug\Repaso.pdb
+D:\Moreno\Lab2\Ejercicios\Repaso\obj\Debug\Repaso.csprojAssemblyReference.cache

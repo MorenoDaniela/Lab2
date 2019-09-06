@@ -12,3 +12,10 @@ C:\Users\Daniela Moreno\Desktop\Facutad\Lab2\Ejercicios\Ejercicio 19\obj\Debug\E
 C:\Users\Daniela Moreno\Desktop\Facutad\Lab2\Ejercicios\Ejercicio 19\bin\Debug\Ejercicio 19.exe.config
 C:\Users\Daniela Moreno\Desktop\Facutad\Lab2\Ejercicios\Ejercicio 19\bin\Debug\Ejercicio 19.exe
 C:\Users\Daniela Moreno\Desktop\Facutad\Lab2\Ejercicios\Ejercicio 19\bin\Debug\Ejercicio 19.pdb
+D:\Moreno\Lab2\Ejercicios\Ejercicio 19\bin\Debug\Ejercicio 19.exe.config
+D:\Moreno\Lab2\Ejercicios\Ejercicio 19\bin\Debug\Ejercicio 19.exe
+D:\Moreno\Lab2\Ejercicios\Ejercicio 19\bin\Debug\Ejercicio 19.pdb
+D:\Moreno\Lab2\Ejercicios\Ejercicio 19\obj\Debug\Ejercicio 19.csprojAssemblyReference.cache
+D:\Moreno\Lab2\Ejercicios\Ejercicio 19\obj\Debug\Ejercicio 19.csproj.CoreCompileInputs.cache
+D:\Moreno\Lab2\Ejercicios\Ejercicio 19\obj\Debug\Ejercicio 19.exe
+D:\Moreno\Lab2\Ejercicios\Ejercicio 19\obj\Debug\Ejercicio 19.pdb

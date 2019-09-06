@@ -1,33 +1,38 @@
-1. ¿Qué propone el paradigma orientado a objetos? ¿Qué es un
+﻿1. ¿Qué propone el paradigma orientado a objetos? ¿Qué es un
 paradigma?
 Es una manera de construir software basada en un nuevo paradigma, propone resolver problemas de realidad a través de identificar 
 objetos y relaciones de colaboracion entre ellos.
 El objeto y el mensaje son sus elementos fundamentales.
+//Comportamiento y objeto elementos fundamentales.
 
 2. Nombre a los pilares del paradigma orientado a objetos.
 Abstraccion, encapsulamiento,herencia y polimorfismo.
 
 3. ¿Qué es una clase?
-Una clase es una clasificación clasificamos en base a comportamientos y atributos comunes.
+Una clase es una clasificación, clasificamos en base a comportamientos y atributos comunes.
 A partir de la clasificacion se crea un vocabulario. 
-Es una abstraccion de un objeto.
+Es una abstraccion de un objeto.EJEMPLO una clase es un molde de galletitas, cada vez que haces una galletita estas haciendo un objeto pero son diferentes,
+tienen diferentes sabores etc.
 
 4. ¿Qué es un objeto? ¿En qué se relacionan con las clases?
+
 En el paradigma de programación orientada a objetos, un objeto es una unidad dentro de un programa de computadores que consta de un estado y de un comportamiento, 
-que a su vez constan respectivamente de datos almacenados y de tareas realizables durante el tiempo de ejecución. 
+que a su vez constan respectivamente de datos almacenados y de tareas realizables durante el tiempo de ejecución.
+Un objeto es una instancia de la clase. Todos los objetos de la misma clase tendran los mismos atributos y operaciones.
 
 5. ¿Qué significa instanciar un objeto?
+Se asigna espacio en memoria a un objeto.
 No se instancia un objeto se inicializa, un objeto es una instancia de una Clase.
 
-6. Explique qué es la abstracción en el contexto de programación
-orientada a objetos y cuál es su relación con las clases.
-Ignorancia selectiva, decide que es importante y que no, Se enfoca en lo importante
+6. Explique qué es la abstracción en el contexto de programación orientada a objetos y cuál es su relación con las clases.
+Mecanismo mediante el cual seIgnorancia selectiva, decide que es importante y que no, Se enfoca en lo importante
 ignora lo que no es importante. Se utiliza el encapsulamiento para reforzar la abstraccion.
 
-7. ¿Qué son los atributos o estado de un objeto?
+7. ¿Qué son los atributos o estado de un objeto?COMO ES, caracteristicas.
+Propiedad y caracteristicas de los objetos.
 
-
-8. ¿Qué son los métodos de un objeto?
+8. ¿Qué son los métodos de un objeto? QUE HACE
+Comportamientos de un objeto. 
 Miembros estáticos y de instancia (no estáticos):
 
 9. ¿Qué es un método estático? ¿En qué se diferencia de los métodos de
@@ -62,14 +67,19 @@ de .NET Framework.
 Namespaces y directivas:
 
 18. ¿Qué es un namespace y cuál es su función principal?
+Es una agrupacion logica de clases y otros elementos.Su funcion principal es organizar codigo.
 
 19. ¿Puedo tener distintos namespaces dentro de un mismo proyecto o
 ensamblado de .NET?
+Es posible, pero no se recomienda.
 
 20. ¿Para qué se usa la directiva using?
+Para agregar bibliotecas, permite la llamada a diferentes funciones sin 
 
 21. ¿Para qué se usa la directiva alias?
+Para renombrar internamente un namespace.
 
 22. ¿Puedo declarar dos clases independientes/distintas con el mismo
 identificador dentro del mismo namespace? ¿Y en namespaces
 distintos?
+En el mismo no, en distintas si.

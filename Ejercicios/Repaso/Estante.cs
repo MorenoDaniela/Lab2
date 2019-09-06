@@ -32,19 +32,25 @@ namespace Repaso
 
         public static string MostrarEstante (Estante e)
         {
+            StringBuilder cadena = new StringBuilder();
+            cadena.AppendFormat("Ubicacion del estante: {0} \n", e.ubicacionEstante);
+            cadena.AppendFormat("Capacidad: {0} \n", e.productos.Length);
+            /*
             String.Format("Ubicacion estante: {0} ", e.ubicacionEstante);
             String.Format("Capacidad: {0}", e.productos.Length);
-            String.Format("PRODUCTOS: ");
-            string aux = "";
+            String.Format("PRODUCTOS: ");*/
+            //string aux = "";
             
             if (!(e is null))
             {
                 foreach (Producto p in e.productos)
                 {
-                    aux = aux + "\n" + Producto.MostrarProducto(p);
+                    cadena.AppendLine(Producto.MostrarProducto(p));
+                    //aux = aux + "\n" + Producto.MostrarProducto(p);
                 }
             }
-            return aux;
+            return cadena.ToString();
+            //return aux;
         }
 
         public static bool operator ==(Estante e, Producto p)

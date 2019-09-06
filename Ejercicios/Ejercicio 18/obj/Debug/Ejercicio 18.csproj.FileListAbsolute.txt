@@ -5,3 +5,10 @@ C:\Users\Pc\Desktop\Lab2\Ejercicios\Ejercicio 18\bin\Debug\Ejercicio 18.exe
 C:\Users\Pc\Desktop\Lab2\Ejercicios\Ejercicio 18\bin\Debug\Ejercicio 18.pdb
 C:\Users\Pc\Desktop\Lab2\Ejercicios\Ejercicio 18\obj\Debug\Ejercicio 18.exe
 C:\Users\Pc\Desktop\Lab2\Ejercicios\Ejercicio 18\obj\Debug\Ejercicio 18.pdb
+D:\Moreno\Lab2\Ejercicios\Ejercicio 18\bin\Debug\Ejercicio 18.exe.config
+D:\Moreno\Lab2\Ejercicios\Ejercicio 18\bin\Debug\Ejercicio 18.exe
+D:\Moreno\Lab2\Ejercicios\Ejercicio 18\bin\Debug\Ejercicio 18.pdb
+D:\Moreno\Lab2\Ejercicios\Ejercicio 18\obj\Debug\Ejercicio 18.csprojAssemblyReference.cache
+D:\Moreno\Lab2\Ejercicios\Ejercicio 18\obj\Debug\Ejercicio 18.csproj.CoreCompileInputs.cache
+D:\Moreno\Lab2\Ejercicios\Ejercicio 18\obj\Debug\Ejercicio 18.exe
+D:\Moreno\Lab2\Ejercicios\Ejercicio 18\obj\Debug\Ejercicio 18.pdb
