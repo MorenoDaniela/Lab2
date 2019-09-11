@@ -35,17 +35,33 @@ Propiedad y caracteristicas de los objetos.
 Comportamientos de un objeto. 
 Miembros estáticos y de instancia (no estáticos):
 
-9. ¿Qué es un método estático? ¿En qué se diferencia de los métodos de
-instancia (no estáticos)?
+9. ¿Qué es un método estático? ¿En qué se diferencia de los métodos de instancia (no estáticos)?
+Un método de instancia es el que se invoca siempre sobre una instancia (objeto) de una clase. 
+Por ejemplo p1.getNombre(); siendo p1 un objeto de tipo Persona es un método de instancia: para invocarlo necesitamos una instancia de persona. 
+Un método de clase es aquel que puede ser invocado sin existir una instancia.
 
 10. ¿Qué es una clase estática? ¿En qué se diferencia de las clases no
 estáticas?
+Una static class es aquella clase que se usa sin necesidad de realizar una instanciación de la misma. 
+Se utiliza como una unidad de organización para métodos no asociados a objetos particulares y separa datos y comportamientos que son independientes de cualquier identidad del objeto.
+Las clases estáticas son adecuadas cuando no tienen que almacenar información, sino sólo realizar cálculos o algún proceso que no cambie. 
+Los datos de miembros estáticos se almacenan en una zona especial del Heap denominado High Frequency Heap.
+En el .NET Framework tenemos ejemplos de clases estáticas como System.Console, System.Math, System.Environment, etc…
+Los requisitos a la hora de crear una clase estática son los siguientes:
+La clase debe derivar directamente de System.Object porque la herencia se aplica a clases de instancia y como hemos dicho, una clase estática no realiza intanciación alguna.
+La clase no debe implementar ningún interfaz ya que que los métodos del interfaz son llamados en una instancia de la clase.
+La clase debe definir únicamente miembros estáticos. Cualquier miembro de instancia provocará un error de compilación.
+La clase no puede usarse como un campo, como parámetro de un método o como variable local ya que todos estos conceptos refieren a una instancia.
+Sólo puede contener constructores estáticos y privados.
+Se usa el modificador static para definir una clase o miembro estàtico.
 
 11. ¿Puedo tener miembros estáticos en clases no-estáticas? ¿Puedo
 tener miembros no-estáticos en clases estáticas?
+Si, no.
 
 12. ¿Necesito instanciar un objeto de la clase para llamar a sus métodos
 estáticos?
+No.
 
 13. ¿Cuántos valores distintos pueden existir para un campo estático y
 cuántos de uno no-estático cuando se crearon 5 instancias de la clase?

@@ -1,0 +1,70 @@
+Guía de Estudio: Clase 03
+
+Objetos:
+1. ¿Los objetos se crean en tiempo de diseño, de compilación o de ejecución?
+Los objetos se crean en tiempo de ejecucion.
+
+2. ¿Cuántos objetos de tipo Alumno puedo tener en mi sistema? ¿Cuántas clases Alumno tengo en mi sistema? (Dentro de un mismo namespace).
+Se pueden tener todos los alumnos que se quiera. Se puede tener una sola clase alumno.
+
+3. Explique el ciclo de vida de un objeto. Detalle las funciones del operador new, del constructor y del Garbage Collector.
+El operador new se utiliza para asignar memoria. El constructor se utiliza para inicializar un objeto en esa memoria. Destrucciòn del objeto:
+se pierde la referencia en memoria ya sea por finalizacion del programa, cambio o eliminacion de la variable. El garbage collector liberara memoria cuando lo crea necesario.
+
+4. ¿En qué segmento de memoria se almacenan los tipos valor (value type) y en cuál los tipos por referencia (reference type)? ¿En cuál interfiere al Garbage Collector?
+
+RESUMEN: LOS TIPOS VALOR SE ALMACEN EN EL STACK(PILA), LOS TIPOS POR REFERENCIA EN EL HEAP(MONTON)
+
+El CLR administra dos segmentos de memoria, los cuales son utilizados de distinta forma a lo largo del ciclo de vida de una aplicación:
+El Stack, o Pila: es una sección de memoria que almacena los “tipos de valor” (Value Types), 
+llamados así porque tanto su referencia como su valor se encuentran en la misma posición de memoria. 
+Ejemplos de tipos por valor en el CLR son los caracteres, los números enteros y los booleanos.
+ A estos tipos de dato también se los conoce como “tipos primitivos”. 
+El stack se comporta como una lista LIFO (Last In – First Out), donde se van apilando valores uno encima de otro y sólo se puede recuperar un valor
+ desapilando los que tiene por encima. La memoria ocupada por los Value Types es liberada automáticamente por el CLR una vez que se finaliza el procedimiento
+ o el bloque de código donde fueron declarados.
+El Heap, o “Montón”: es unas sección de memoria que almacena los “tipos de referencia” (Reference Types), llamados así porque su almacenamiento se encuentra dividido
+En el stack se almacena una referencia al contenido de la variable
+En el heap se guarda el valor propiamente dicho de la variable
+Ejemplos de tipos por referencia son los Strings (cadenas de caracteres) y cualquier tipo de dato definido por el usuario
+ (por ejemplo clases e interfaces que se creen a lo largo del desarrollo de una aplicación).
+La memoria ocupada por los Reference Types es liberada automáticamente por el Garbage Collector del CLR, 
+de manera no determinística (esto quiere decir que no se puede tener conocimiento acerca de en qué momento se liberará la memoria). 
+El CLR no puede ser invocado por los desarrolladores, y nuca debe hacerse ninguna presuposición acerca de cuándo y cómo se ejecutará.
+
+
+5. Compare y describa: Destrucción determinista y no determinista. Asocie con el concepto de variables y objetos.
+El tiempo de vida de una variable local está vinculado al ámbito en el que está declarada. Tiempo de vida corto (en general). Creación y destrucción deterministas.
+El tiempo de vida de un objeto dinámico no está vinculado a su ámbito. Tiempo de vida más largo. Destrucción no determinista.
+
+
+Constantes:
+6. ¿Qué es una constante? ¿Se puede declarar constantes estáticas (static const)?
+Una constante es otro tipo de campo. 
+Las constantes se declaran con la palabra clave const; son útiles para que el código sea más legible.
+
+7. ¿Cuándo se asigna el valor a las constantes (tiempo de compilación o ejecución)? ¿Dos objetos del mismo tipo pueden tener distintos valores en una misma constante? 
+Relacione con atributos de instancia y estáticos.
+Contiene un valor que se asigna cuando se compila el programa y nunca cambia.  No.
+
+Constructores:
+8. ¿Qué es un constructor? ¿Cuál es su función?
+Los constructores son métodos especiales que se utilizan para inicializar objetos al momento de su creación.
+En C#, la única forma de crear un objeto es mediante el uso de la palabra reservada new para adquirir y asignar memoria. 
+
+9. ¿Qué es el constructor por defecto? ¿Qué sucede con el mismo cuando declaramos un constructor nuevo en la clase?
+Aunque no se escriba ningún constructor, existe uno por defecto que se usa cuando se crea un objeto a partir de un tipo referencia.  No sucede nada, solo es una sobrecarga de constructores
+crearan un mismo objeto pero con diferentes instancias(??????
+
+10.¿Con qué valores se cargan los atributos cuando se llama al constructor por defecto?
+Inicializa todos los atributos a 0, false o null.
+
+11.¿Qué es y para qué sirve un constructor estático? ¿En qué se diferencia su sintaxis de los métodos de instancia?
+Son los encargados de inicializar clases. Sólo inicializará los atributos estáticos.
+No debe llevar modificadores de acceso. Utilizan la palabra reservada static. No pueden recibir parámetros.
+
+12.¿Cuántas veces se puede llamar a un constructor estático? ¿Quién lo puede llamar?
+Todas las que quieras(? 
+
+13.¿Se ejecutará primero un constructor estático o uno de instancia?
+El estatico.
