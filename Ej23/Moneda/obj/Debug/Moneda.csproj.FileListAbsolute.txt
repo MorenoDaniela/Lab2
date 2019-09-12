@@ -1,0 +1,6 @@
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Moneda\bin\Debug\Moneda.dll
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Moneda\bin\Debug\Moneda.pdb
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Moneda\obj\Debug\Moneda.csprojAssemblyReference.cache
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Moneda\obj\Debug\Moneda.csproj.CoreCompileInputs.cache
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Moneda\obj\Debug\Moneda.dll
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Moneda\obj\Debug\Moneda.pdb

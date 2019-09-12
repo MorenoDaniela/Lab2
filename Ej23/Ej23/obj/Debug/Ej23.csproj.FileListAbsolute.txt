@@ -1,0 +1,13 @@
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\bin\Debug\Ej23.exe.config
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\bin\Debug\Ej23.exe
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\bin\Debug\Ej23.pdb
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\bin\Debug\Moneda.dll
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\bin\Debug\Moneda.pdb
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\obj\Debug\Ej23.csprojAssemblyReference.cache
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\obj\Debug\Ej23.Form1.resources
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\obj\Debug\Ej23.Properties.Resources.resources
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\obj\Debug\Ej23.csproj.GenerateResource.cache
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\obj\Debug\Ej23.csproj.CoreCompileInputs.cache
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\obj\Debug\Ej23.csproj.CopyComplete
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\obj\Debug\Ej23.exe
+C:\Users\Daniela Moreno\Desktop\Backup git\Lab2\Ej23\Ej23\obj\Debug\Ej23.pdb
