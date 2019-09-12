@@ -319,7 +319,7 @@ namespace Billetes
         public static explicit operator Euro(Dolar d)
         {
             //return new Euro(d.cantidad / cotizRespectoDolar);
-            return new Euro(d.GetCantidad() / Euro.GetCotizacion());
+            return new Euro(d.GetCantidad() * Euro.GetCotizacion());
         }
 
         public static explicit operator Peso(Dolar d)

@@ -18,9 +18,9 @@ namespace Ejercicio_20
             Peso res2 = p + d;
             Dolar resultado = d + p;
             Euro res = e+p;
-            Console.WriteLine("DOLAR RESULT {0}", resultado.GetCantidad());
+            Console.WriteLine("PESO RESULT {0}", resultado.GetCantidad());
             Console.WriteLine("EURO RESULT {0}", res.GetCantidad());
-            Console.WriteLine("PESO RESULT {0}", res2.GetCantidad());
+            Console.WriteLine("DOLAR RESULT {0}", res2.GetCantidad());
             Console.ReadKey();
         }
     }
