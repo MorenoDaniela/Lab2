@@ -5,10 +5,3 @@ C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Ejercicio 20\obj\Debug\
 C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Ejercicio 20\obj\Debug\Ejercicio 20.csproj.CoreCompileInputs.cache
 C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Ejercicio 20\obj\Debug\Ejercicio 20.exe
 C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Ejercicios\Ejercicio 20\obj\Debug\Ejercicio 20.pdb
-D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 20\bin\Debug\Ejercicio 20.exe.config
-D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 20\bin\Debug\Ejercicio 20.exe
-D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 20\bin\Debug\Ejercicio 20.pdb
-D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 20\obj\Debug\Ejercicio 20.csprojAssemblyReference.cache
-D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 20\obj\Debug\Ejercicio 20.csproj.CoreCompileInputs.cache
-D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 20\obj\Debug\Ejercicio 20.exe
-D:\MorenoDaniela\Lab2\Ejercicios\Ejercicio 20\obj\Debug\Ejercicio 20.pdb

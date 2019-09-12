@@ -14,7 +14,8 @@ namespace Billetes
 
         static Euro()
         {
-            cotizRespectoDolar = 2;
+            //cotizRespectoDolar = 0.50;//2
+            cotizRespectoDolar = 0.86;//2
         }
 
         public Euro(double cantidad)
@@ -48,13 +49,14 @@ namespace Billetes
 
         public static explicit operator Dolar(Euro e)
         {
-            return new Dolar(e.GetCantidad() / Dolar.GetCotizacion());
+            return new Dolar(e.GetCantidad() / Euro.GetCotizacion());
             //return (Dolar)(p.GetCantidad() / Dolar.GetCotizacion());
         }
 
         public static explicit operator Peso(Euro e)
         {
-            return new Peso(e.GetCantidad() / GetCotizacion());
+            return new Peso(e.GetCantidad() / 0.0223);
+            //return new Peso(e.GetCantidad() / 0.25);
             //return (Euro)(p.GetCantidad() / Euro.GetCotizacion());
         }
 
@@ -149,8 +151,8 @@ namespace Billetes
 
         static Peso()
         {
-            cotizRespectoDolar = 0.50;
-            //cotizRespectoDolar = 0.0260;
+            //cotizRespectoDolar = 2;///0.50
+            cotizRespectoDolar = 38.33;
         }
 
         public Peso(double cantidad)
@@ -183,13 +185,14 @@ namespace Billetes
 
         public static explicit operator Dolar(Peso p)
         {
-            return new Dolar(p.GetCantidad() * Peso.GetCotizacion());
+            return new Dolar(p.GetCantidad() / Peso.GetCotizacion());
             //return (Dolar)(p.GetCantidad() / Dolar.GetCotizacion());
         }
 
         public static explicit operator Euro(Peso p)
         {
-            return new Euro(p.GetCantidad() / Euro.GetCotizacion());
+            return new Euro(p.GetCantidad() * 0.0223);//
+            //return new Euro(p.GetCantidad() * 0.25);//
             //return (Euro)(p.GetCantidad() / Euro.GetCotizacion());
         }
 
@@ -319,13 +322,13 @@ namespace Billetes
         public static explicit operator Euro(Dolar d)
         {
             //return new Euro(d.cantidad / cotizRespectoDolar);
-            return new Euro(d.GetCantidad() * Euro.GetCotizacion());
+            return new Euro(d.GetCantidad() / Euro.GetCotizacion());
         }
 
         public static explicit operator Peso(Dolar d)
         {
              
-            return new Peso(d.GetCantidad() / Peso.GetCotizacion());//
+            return new Peso(d.GetCantidad() * Peso.GetCotizacion());//
         }
 
         public static bool operator ==(Dolar d, Euro e)

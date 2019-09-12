@@ -12,15 +12,15 @@ namespace Ejercicio_20
         static void Main(string[] args)
         {
             Dolar d = new Dolar(1);
-            Peso p = new Peso(100);
-            Euro e = new Euro(5);
+            Peso p = new Peso(1);
+            Euro e = new Euro(1);
 
             Peso res2 = p + d;
             Dolar resultado = d + p;
             Euro res = e+p;
-            Console.WriteLine("PESO RESULT {0}", resultado.GetCantidad());
+            Console.WriteLine("DOLAR RESULT {0}", resultado.GetCantidad());
             Console.WriteLine("EURO RESULT {0}", res.GetCantidad());
-            Console.WriteLine("DOLAR RESULT {0}", res2.GetCantidad());
+            Console.WriteLine("PESO RESULT {0}", res2.GetCantidad());
             Console.ReadKey();
         }
     }
