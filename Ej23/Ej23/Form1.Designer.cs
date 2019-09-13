@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,6 +56,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -91,7 +94,6 @@
             this.label4.Size = new System.Drawing.Size(72, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "COTIZACION";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // textBox1
             // 
@@ -116,11 +118,11 @@
             // 
             // button1
             // 
+            this.button1.Image = global::Ej23.Properties.Resources.iconfinder_icon_115_lock_open_314693;
             this.button1.Location = new System.Drawing.Point(222, 38);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 31);
             this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -265,6 +267,13 @@
             this.label7.TabIndex = 25;
             this.label7.Text = "PESO";
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "iconfinder_icon-115-lock-open_314693.png");
+            this.imageList1.Images.SetKeyName(1, "iconfinder_icon-114-lock_314692(1).png");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,6 +341,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 

@@ -66,9 +66,5 @@ namespace Ej23
             textBox14.Text = ((Dolar)peso).GetCantidad().ToString();
         }
 
-        private void Label4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
