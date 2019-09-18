@@ -1,0 +1,88 @@
+Guía de Estudio: Clase 04
+1. ¿Qué significa sobrecargar un método o constructor?
+Crear algo para darle nueva funcionalidad con diferentes parametros.
+
+2. ¿Qué debe cambiar para que la sobrecarga de un método o
+constructor sea válida?
+Los parametros.
+
+3. ¿La sobrecarga se resuelve en tiempo de ejecución o en tiempo de
+compilación? ¿Cómo se distingue a qué sobrecarga llamar?
+Tiempo de compilacion static, (tiempo de ejecucion dinamica de polimorfismo?) Cuando vas escribiendo segun los parametros el 
+compilador se da cuenta.
+
+4. ¿Se tiene en cuenta el nombre o identificador de los parámetros de
+entrada para una sobrecarga?
+No, se tiene en cuenta el tipo.
+
+5. ¿Se tiene en cuenta el modificador de visibilidad para una sobrecarga?
+Si.
+
+Sobrecarga de Métodos:
+
+6. ¿Los métodos pueden tener el mismo nombre que otros elementos de
+una misma clase? (atributos, propiedades, etc).
+No.
+
+7. Mencione dos razones por las cuales se sobrecargan los métodos.
+Para añadir funcionalidad al codigo, metodos similares que requieren parametros distintos.
+
+8. ¿Los métodos estáticos pueden ser sobrecargados?
+si.
+
+9. ¿Agregar el modificador “static” sin cambiar los parámetros de entrada
+es una sobrecarga válida?
+No se considera sobrecargar.
+
+10. ¿Agregar un modificador “out” o “ref” en la firma del método sin
+cambiar nada más es una sobrecarga válida?
+Si
+
+11. ¿Cambiar el tipo de retorno sin cambiar los parámetros de entrada es
+una sobrecarga válida?
+No.- (?? ahre
+
+
+12. Si tenemos distintas sobrecargas de un método, ¿cómo podemos
+reutilizar código?
+Llamando a un metodo que tenga menos parametros.
+
+Sobrecarga de Constructores:
+
+13. ¿Se pueden sobrecargar los constructores estáticos?
+No.
+
+14. ¿Se puede llamar a un constructor estático con el operador “this()”?
+No
+
+15. ¿Se puede llamar a constructores de otras clases con el operador
+“this()”?
+No.
+
+16. ¿Se puede sobrecargar un constructor privado?
+No tiene sentido pero se puede.
+
+Sobrecarga de Operadores:
+
+17. ¿Qué es un operador? ¿En qué se diferencian un operador unario y un
+operador binario? De un ejemplo de cada uno.
+En el unario se utiliza un solo operando ++, en el binario se utilizan dos +-
+
+18. ¿Qué varía en la sintaxis de la sobrecarga de operadores unarios y
+binarios?
+
+
+19. ¿Se pueden sobrecargar los operadores de operación y asignación (+=,
+-=, *=, /=)? ¿Por qué?
+No porque ya se tienen en cuenta al sobrecargar los operadores +, - * /
+
+20. ¿Cuál es la diferencia entre un operador de conversión implícito y uno
+explícito? (En finalidad, declaración y aplicación)
+En el explicito hay que castear.
+
+21. Los operadores de casteo “(T)x” no se pueden sobrecargar. ¿Cuál es la
+alternativa?
+Crear un metodo que convierta explicitamente.
+
+22. ¿Cuál es la diferencia entre castear (casting), convertir (converting) y
+parsear (parsing)?

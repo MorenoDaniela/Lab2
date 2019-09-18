@@ -10,3 +10,9 @@ D:\MorenoDaniela\Lab2\Ej23\Moneda\obj\Debug\Moneda.csprojAssemblyReference.cache
 D:\MorenoDaniela\Lab2\Ej23\Moneda\obj\Debug\Moneda.csproj.CoreCompileInputs.cache
 D:\MorenoDaniela\Lab2\Ej23\Moneda\obj\Debug\Moneda.dll
 D:\MorenoDaniela\Lab2\Ej23\Moneda\obj\Debug\Moneda.pdb
+D:\denumoreno\Lab2\Ej23\Moneda\bin\Debug\Moneda.dll
+D:\denumoreno\Lab2\Ej23\Moneda\bin\Debug\Moneda.pdb
+D:\denumoreno\Lab2\Ej23\Moneda\obj\Debug\Moneda.csprojAssemblyReference.cache
+D:\denumoreno\Lab2\Ej23\Moneda\obj\Debug\Moneda.csproj.CoreCompileInputs.cache
+D:\denumoreno\Lab2\Ej23\Moneda\obj\Debug\Moneda.dll
+D:\denumoreno\Lab2\Ej23\Moneda\obj\Debug\Moneda.pdb
