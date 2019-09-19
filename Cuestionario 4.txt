@@ -16,7 +16,7 @@ entrada para una sobrecarga?
 No, se tiene en cuenta el tipo.
 
 5. ¿Se tiene en cuenta el modificador de visibilidad para una sobrecarga?
-Si.
+No.
 
 Sobrecarga de Métodos:
 
@@ -25,7 +25,7 @@ una misma clase? (atributos, propiedades, etc).
 No.
 
 7. Mencione dos razones por las cuales se sobrecargan los métodos.
-Para añadir funcionalidad al codigo, metodos similares que requieren parametros distintos.
+Para añadir funcionalidad al codigo existente sin afectar el codigo que ya funciona, metodos similares que requieren parametros distintos.
 
 8. ¿Los métodos estáticos pueden ser sobrecargados?
 si.
@@ -36,12 +36,11 @@ No se considera sobrecargar.
 
 10. ¿Agregar un modificador “out” o “ref” en la firma del método sin
 cambiar nada más es una sobrecarga válida?
-Si
+Si. out y ref son dos formas de pasar variable por referencia, pero a out te obliga a pasar un valor,
 
 11. ¿Cambiar el tipo de retorno sin cambiar los parámetros de entrada es
 una sobrecarga válida?
-No.- (?? ahre
-
+No.- 
 
 12. Si tenemos distintas sobrecargas de un método, ¿cómo podemos
 reutilizar código?
@@ -53,20 +52,21 @@ Sobrecarga de Constructores:
 No.
 
 14. ¿Se puede llamar a un constructor estático con el operador “this()”?
-No
+No. pporque corresponde a la instancia del objeto.
 
 15. ¿Se puede llamar a constructores de otras clases con el operador
 “this()”?
 No.
 
 16. ¿Se puede sobrecargar un constructor privado?
-No tiene sentido pero se puede.
+Si se puede. macri gato
 
 Sobrecarga de Operadores:
 
 17. ¿Qué es un operador? ¿En qué se diferencian un operador unario y un
 operador binario? De un ejemplo de cada uno.
-En el unario se utiliza un solo operando ++, en el binario se utilizan dos +-
+
+En el unario se utiliza un solo operando ++, en el binario se utilizan dos != +=
 
 18. ¿Qué varía en la sintaxis de la sobrecarga de operadores unarios y
 binarios?
@@ -78,11 +78,14 @@ No porque ya se tienen en cuenta al sobrecargar los operadores +, - * /
 
 20. ¿Cuál es la diferencia entre un operador de conversión implícito y uno
 explícito? (En finalidad, declaración y aplicación)
-En el explicito hay que castear.
+En el explicito hay que castear, en la firma uno utiliza explicit y el otro implicit. En aplicacion si usas un operador explicito puede haber perdida de datos. En la
+implicita no hay perdida de datos.
 
 21. Los operadores de casteo “(T)x” no se pueden sobrecargar. ¿Cuál es la
 alternativa?
-Crear un metodo que convierta explicitamente.
+Sobrecarga explicita.
 
 22. ¿Cuál es la diferencia entre castear (casting), convertir (converting) y
 parsear (parsing)?
+
+Cuando haces casting es porque esperas que se pueda perder informacion, cuando haces converting, el parsing es para convertir un tipo string en numerico.
