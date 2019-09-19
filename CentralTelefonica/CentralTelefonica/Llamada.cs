@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CentralTelefonica
 {
-    class Llamada
+    public class Llamada
     {
         protected float duracion;
         protected string numeroDestino;
@@ -30,8 +30,31 @@ namespace CentralTelefonica
         public Llamada (float duracion, string nroDestino, string nroOrigen)
         {
             this.duracion = duracion;
-            this.numeroDestino = nroDestino;
-            this.numeroOrigen = nroOrigen;
+            numeroDestino = nroDestino;
+            numeroOrigen = nroOrigen;
+        }
+
+        public string Mostrar()
+        {
+            //Llamada llamada = new Llamada(this.duracion,this.numeroDestino,this.numeroOrigen);
+            StringBuilder cadena = new StringBuilder();
+            cadena.Append(Duracion.ToString()).Append(" ").Append(NroDestino).Append(" ").Append(NroOrigen);
+            return cadena.ToString();
+        }
+
+        public int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
+        {
+
+            if (llamada1.Duracion == llamada2.Duracion)
+            {
+                return 0;
+            }else if (llamada1.Duracion > llamada2.Duracion)
+            {
+                return 1;
+            }else
+            {
+                return -1;
+            }
         }
 
     }
