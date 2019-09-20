@@ -13,7 +13,14 @@ namespace CentralTelefonica
 
         public float GananciasPorTotal
         {
-            get { return CalcularGanancia(Llamada.TipoLlamada.Total); }
+            get { return CalcularGanancia(Llamada.TipoLlamada.Todas); }
+        }
+
+        public Centralita ()
+        {
+            this.listaLlamadas = new List<Llamada>(listaLlamadas);
+            th
+
         }
 
         private float CalcularGanancia(Llamada.TipoLlamada tipo)
@@ -51,8 +58,6 @@ namespace CentralTelefonica
                 }
                 cadena.AppendLine(aux);
             }
-           
-
             return cadena.ToString();
         }
 

@@ -30,8 +30,8 @@ namespace CentralTelefonica
         public Llamada (float duracion, string nroDestino, string nroOrigen)
         {
             this.duracion = duracion;
-            numeroDestino = nroDestino;
-            numeroOrigen = nroOrigen;
+            this.numeroDestino = nroDestino;
+            this.numeroOrigen = nroOrigen;
         }
 
         public string Mostrar()
