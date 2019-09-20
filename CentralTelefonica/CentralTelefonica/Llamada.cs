@@ -57,5 +57,11 @@ namespace CentralTelefonica
             }
         }
 
+        public enum TipoLlamada
+        {
+            Local,
+            Provincial,
+            Todas
+        }
     }
 }

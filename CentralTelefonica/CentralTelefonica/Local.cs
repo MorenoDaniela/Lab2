@@ -10,38 +10,37 @@ namespace CentralTelefonica
     {
         
         protected float costo;
-        //private int myVar;
 
         public float CostoLlamada
         {
-            get { return costo; }
-            //set { myVar = value; }
+            get
+            {
+                return CalcularCosto();
+            }
         }
 
         private float CalcularCosto()
         {
-            return costo;
+            return this.costo * base.Duracion;
         }
 
-        public string Mostrar()
+        public new string Mostrar() 
         {
             StringBuilder llamada = new StringBuilder();
-            llamada.Append(CostoLlamada.ToString());
+            llamada.AppendLine(base.Mostrar()).AppendLine(CostoLlamada.ToString());
             return llamada.ToString();
         }
 
         public Local(Llamada llamada, float costo) 
-            : base(llamada.Duracion,llamada.NroDestino,llamada.NroOrigen)//float duracion, string nroDestino, string nroOrigen
+            : base(llamada.Duracion,llamada.NroDestino,llamada.NroOrigen)
         {
             
-            this.costo = costo;//tengo que crear una llamada es pregunta, no no se heredan los constructores
+            this.costo = costo;
         }
 
-        public Local(string origen, float duracion, string destino, float costo)
+        public Local(string origen, float duracion, string destino, float costo) : this (new Llamada(duracion, destino,origen),costo)
         {
-            numeroOrigen = origen;
-            numeroDestino = destino;
-            Duracion = duracion;
+
         }
     }
 }
