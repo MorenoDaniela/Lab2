@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace CentralTelefonica
 {
@@ -13,14 +14,45 @@ namespace CentralTelefonica
 
         public float GananciasPorTotal
         {
-            get { return CalcularGanancia(Llamada.TipoLlamada.Todas); }
+            get
+            {
+                return CalcularGanancia(Llamada.TipoLlamada.Todas);
+            }
+        }
+
+        public float GananciasPorLocal
+        {
+            get
+            {
+                return CalcularGanancia(Llamada.TipoLlamada.Local);
+            }
+        }
+        public float GananciasPorProvincial
+        {
+            get
+            {
+                return CalcularGanancia(Llamada.TipoLlamada.Provincial);
+            }
+        }
+
+        public List<Llamada> Llamadas
+        {
+            get
+            {
+                return this.listaLlamadas;
+            }
         }
 
         public Centralita ()
         {
-            this.listaLlamadas = new List<Llamada>(listaLlamadas);
-            th
+            //this.Llamadas = new List<Llamada>(Llamadas);
+            this.listaLlamadas = new List<Llamada>();
 
+        }
+        public Centralita(string nombreEmpresa)
+            :this()
+        {
+            this.razonSocial = nombreEmpresa;
         }
 
         private float CalcularGanancia(Llamada.TipoLlamada tipo)
@@ -59,6 +91,11 @@ namespace CentralTelefonica
                 cadena.AppendLine(aux);
             }
             return cadena.ToString();
+        }
+
+        public void OrdenarLlamadas()
+        {
+            this.Llamadas.Sort(IComparer<Llamada>.OrdenarPorDuracion);//no se como carajo hacer esto me harte. Ya probe todas las combinaciones T.T
         }
 
     }
