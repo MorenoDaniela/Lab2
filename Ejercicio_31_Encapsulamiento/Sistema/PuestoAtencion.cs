@@ -10,21 +10,42 @@ namespace Sistema
     class PuestoAtencion
     {
         private static int numeroActual;
-        PuestoAtencion puesto;
+        Puesto puesto;
 
-        public int NumeroActual
+        public static int NumeroActual
         {
-            get { return numeroActual; }
+            get { return numeroActual+1; }
             //set { numeroActual = value; }
         }
 
         public bool Atender(Cliente clien)
         {
             bool retorno = false;
-            Thread.sleep(2000);
-
-
-
+            if (!(clien is null))
+            {
+                Thread.Sleep(2000);
+                retorno = true;
+            }
+            return retorno;
         }
+
+        private PuestoAtencion()
+        {
+            NumeroActual = 0;
+        }
+
+        public PuestoAtencion(Puesto puesto)
+        {
+            this.puesto = puesto;
+        }
+
+
+        public enum Puesto
+        {
+            Caja1,
+            Caja2
+        }
+
+
     }
 }
