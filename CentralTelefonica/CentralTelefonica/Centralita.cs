@@ -95,7 +95,7 @@ namespace CentralTelefonica
 
         public void OrdenarLlamadas()
         {
-            this.Llamadas.Sort(IComparer<Llamada>.OrdenarPorDuracion);//no se como carajo hacer esto me harte. Ya probe todas las combinaciones T.T
+            this.listaLlamadas.Sort(Llamada.OrdenarPorDuracion);
         }
 
     }

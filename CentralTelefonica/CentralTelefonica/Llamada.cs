@@ -38,23 +38,29 @@ namespace CentralTelefonica
         {
             //Llamada llamada = new Llamada(this.duracion,this.numeroDestino,this.numeroOrigen);
             StringBuilder cadena = new StringBuilder();
-            cadena.Append(Duracion.ToString()).Append(" ").Append(NroDestino).Append(" ").Append(NroOrigen);
+            cadena.AppendLine("Duracion : " + Duracion.ToString());
+            cadena.AppendLine("Numero destino: " + NroDestino.ToString());
+            cadena.AppendLine("Numero de origen: " + NroOrigen.ToString());
+            //cadena.Append(Duracion.ToString()).Append(" ").Append(NroDestino).Append(" ").Append(NroOrigen);
             return cadena.ToString();
         }
 
-        public int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
+        public static int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
         {
-
+            int retorno = 0;
             if (llamada1.Duracion == llamada2.Duracion)
             {
-                return 0;
-            }else if (llamada1.Duracion > llamada2.Duracion)
-            {
-                return 1;
-            }else
-            {
-                return -1;
+                retorno=0;
             }
+            else if (llamada1.Duracion > llamada2.Duracion)
+            {
+                retorno=1;
+            }
+            else
+            {
+                retorno=-1;
+            }
+            return retorno;
         }
 
         public enum TipoLlamada

@@ -55,5 +55,13 @@ namespace CentralTelefonica
             return Convert.ToSingle(costo); 
         }
 
+        public new string Mostrar()
+        {
+            StringBuilder cadena = new StringBuilder();
+            cadena.AppendLine(base.Mostrar());
+            cadena.AppendLine("Costo llamada: " + CostoLlamada);
+            cadena.AppendLine("Franja: " + this.franjaHoraria);
+            return cadena.ToString();
+        }
     }
 }
