@@ -29,9 +29,9 @@ namespace Sistema
             return retorno;
         }
 
-        private PuestoAtencion()
+        static PuestoAtencion()
         {
-            NumeroActual = 0;
+            numeroActual = 0;
         }
 
         public PuestoAtencion(Puesto puesto)

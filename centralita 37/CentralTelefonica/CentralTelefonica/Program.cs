@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Entidades;
 
 namespace CentralTelefonica
 {
     class Program
     {
-#pragma warning disable cs1633
         static void Main(string[] args)
         {
             // Mi central

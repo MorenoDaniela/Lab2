@@ -1,13 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29306.81
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralitaHerencia", "CentralTelefonica\CentralitaHerencia.csproj", "{03CE059A-08F1-4F2F-B6C9-B627AD91013D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{914012EA-6290-4890-8510-38F9D0923833}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Centralita40", "Centralita40\Centralita40.csproj", "{52EC5C80-98D7-48C1-AE93-4265382E9A33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +15,6 @@ Global
 		{03CE059A-08F1-4F2F-B6C9-B627AD91013D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03CE059A-08F1-4F2F-B6C9-B627AD91013D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03CE059A-08F1-4F2F-B6C9-B627AD91013D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{914012EA-6290-4890-8510-38F9D0923833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{914012EA-6290-4890-8510-38F9D0923833}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{914012EA-6290-4890-8510-38F9D0923833}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{914012EA-6290-4890-8510-38F9D0923833}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52EC5C80-98D7-48C1-AE93-4265382E9A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52EC5C80-98D7-48C1-AE93-4265382E9A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52EC5C80-98D7-48C1-AE93-4265382E9A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52EC5C80-98D7-48C1-AE93-4265382E9A33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

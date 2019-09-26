@@ -25,6 +25,7 @@ namespace Sistema
             get { return nombre; }
             set { nombre = value; }
         }
+         
 
         public Cliente (int numero)
         {
