@@ -31,7 +31,8 @@ namespace CentralTelefonica
             Console.WriteLine(c.Mostrar());
             c.OrdenarLlamadas();
             Console.WriteLine(c.Mostrar());
-            Console.ReadKey();
+            Console.ReadKey();
+
         }
     }
 }

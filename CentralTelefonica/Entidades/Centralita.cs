@@ -7,9 +7,10 @@ using System.Collections;
 
 namespace Entidades
 {
+#pragma warning disable CS0660, CS0661
     public class Centralita
     {
-#pragma warning disable CS0660,CS0661
+
         private List<Llamada> listaLlamadas;
         protected string razonSocial;
 

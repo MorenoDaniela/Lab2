@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+#pragma warning disable CS0660, CS0661
     public abstract class Llamada
     {
-#pragma warning disable CS0660, CS0661
         protected float duracion;
         protected string numeroDestino;
         protected string numeroOrigen;

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+#pragma warning disable CS0660, CS0661, CS0659
     public class Local : Llamada
     {
         
