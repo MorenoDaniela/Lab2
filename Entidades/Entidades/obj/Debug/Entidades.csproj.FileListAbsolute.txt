@@ -1,9 +1,6 @@
-C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Entidades\Entidades\bin\Debug\Entidades.exe.config
-C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Entidades\Entidades\bin\Debug\Entidades.exe
-C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Entidades\Entidades\bin\Debug\Entidades.pdb
-C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Entidades\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
-C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Entidades\Entidades\obj\Debug\Entidades.MiCalculadora.resources
-C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Entidades\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
-C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
-C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Entidades\Entidades\obj\Debug\Entidades.exe
-C:\Users\Daniela Moreno\Desktop\Facultad\Lab2\Entidades\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Dell\source\repos\Entidades\Entidades\bin\Debug\Entidades.dll
+C:\Users\Dell\source\repos\Entidades\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Dell\source\repos\Entidades\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Entidades\Entidades\obj\Debug\Entidades.dll
+C:\Users\Dell\source\repos\Entidades\Entidades\obj\Debug\Entidades.pdb
