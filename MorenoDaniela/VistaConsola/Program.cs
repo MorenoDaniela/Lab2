@@ -43,6 +43,8 @@ namespace VistaConsola
             e += p2;
             e += a2;
             e += m3;
+
+
             Console.WriteLine((string)e);
             Console.WriteLine("--------------------------------");
             Console.WriteLine("--------------------------------");
