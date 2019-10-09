@@ -71,6 +71,7 @@ puede acceder a miembros no-estáticos desde un método estático de
 la misma clase? ¿Se puede acceder a miembros estáticos desde un
 método de instancia?
 
+
 15. ¿Se pueden declarar variables estáticas dentro de un método
 (locales)?
 

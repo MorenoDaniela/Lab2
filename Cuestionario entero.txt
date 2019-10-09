@@ -8,127 +8,308 @@ El CLR es el encargado de compilar una forma de código intermedio llamada Common
 mediante un compilador en tiempo de ejecución.1? No debe confundirse el CLR con una máquina virtual, 
 ya que una vez que el código está compilado, corre nativamente sin intervención de una capa de abstracción sobre el hardware subyacente. 
 Es una implementación del estándar Common Language Infrastructure (CLI).
+ENTORNO EN DONDE TRABAJAMOS Y DONDE SE EJECUTAN LOS CODIGOS.NET
+
 (002) - Describa el proceso de compilación de C#.
+EN TIEMPO DE COMPILACION PASA EL LENGUAJE DE  C# A LENGUAJE INTERMEDIO, EN TIEMPO DE EJECUCION PASA LENGUAJE INTERMEDIO A MAQUINA.
 
 (003) - ¿Qué es el CTS?
+COMUN TYPE SYSTEM.
 3)Define un conjunto común de "tipos" de datos orientados a objetos. El CTS define tipos de valor y de referencia.
 CONJUNTO DE REGLAS QUE HAY QUE SEGUIR PARA QUE CL PUEDA INTERPRETAR EL TIPO DE DATOS
+
 (004) - ¿Qué es un tipo por referencia (Reference Type)? ¿En qué se diferencia de un
 tipo por valor (Value Type)?
-4)Un tipo referencia es por ejemplo una clase, interfaz, array. string, delegado o otro. Un value type es por ejemplo
-un int16,un byte, un char, un decimal, un boolean, un double etc. 
-//Un tipo por referencia puede tener almacenado en su estructura mas de un valor, un value type es un dato
-atomico.// POR REFERENCIA HEAP, VALUE TYPE
+REFERENCIA GUARDA LA DIRECCION DE MEMORIA HACIA EL OBJETO QUE REFIERE EN CAMBIO VALUE TYPE CONTIENE ESOS DATOS.
+
 (005) - Explique las diferencias entre variables escalares y no escalares.
+ESCALARES SON CONSTANTES O VARIABLES QUE TIENEN UN DATO ATOMICO, EJEMPLO INT, LAS NO ESCALARES SON AQUELLAS QUE CONTIENEN MAS DE UN DATO ATOMICO, POR EJEMPLO LAS LISTAS
+Las variables escalares son constantes o variable que contiene un dato atómico y unidimensional.
+Las variables NO ESCALARES son array (vector) lista y objeto, que pueden tener almacenado en su estructura mas de un valor.
+
 (006) - ¿Cuál es el punto de entrada (entry point) para los programas en C#?
+Metodo main.
+
 (007) - ¿Cuál es la diferencia entre una conversión implícita y una explícita?
+En una conversión IMPLÍCITA no interviene el programador(NO HACE FALTA CASTEO)no hay perdida de datos
+, en una EXPLICITA interviene el programador ya que puede haber perdida de datos.
+
+
 [Módulo - 02] Programación orientada a objetos
+
 (008) - ¿Qué propone el paradigma orientado a objetos? ¿Qué es un paradigma?
+Es una manera de construir software basada en un nuevo paradigma, propone resolver problemas de realidad a través de identificar 
+objetos y relaciones de colaboracion entre ellos.
+El objeto y el mensaje son sus elementos fundamentales.
+//Comportamiento y objeto elementos fundamentales.
+
 (009) - Nombre a los pilares del paradigma orientado a objetos.
+Abstraccion, encapsulamiento,herencia y polimorfismo.
+
 (010) - ¿Qué es una clase?
+PLANTILLA QUE NOS PERMITE CREAR OBJETOS.
+
+Una clase es una clasificación, clasificamos en base a comportamientos y atributos comunes.
+A partir de la clasificacion se crea un vocabulario. 
+Es una abstraccion de un objeto.EJEMPLO una clase es un molde de galletitas, cada vez que haces una galletita estas haciendo un objeto pero son diferentes,
+tienen diferentes sabores etc.
+
+
 (011) - ¿Qué es un objeto? ¿En qué se relacionan con las clases?
+Un objeto es una instancia de la clase. Todos los objetos de la misma clase tendran los mismos atributos y operaciones.
+
 (012) - ¿Qué significa instanciar un objeto?
+Se asigna espacio en memoria a un objeto.
+No se instancia un objeto se inicializa, un objeto es una instancia de una Clase.
+
 (013) - Explique qué es la abstracción en el contexto de programación orientada a
 objetos y cuál es su relación con las clases.
+OMITIR DETALLES INNECESARIOS DE LA REALIDAD A LA HORA DE CREAR OBJETOS DANDOLES, ATRIBUTOS Y METODOS.
+Mecanismo mediante el cual seIgnorancia selectiva, decide que es importante y que no, Se enfoca en lo importante
+ignora lo que no es importante. Se utiliza el encapsulamiento para reforzar la abstraccion.
+
 (014) - ¿Qué son los atributos o estado de un objeto?
-(015) - ¿Qué son los métodos de un objeto?
+CARACTERISTICAS DIVERSAS DEL OBJETO. 
+(015) - ¿Qué son los métodos de un objeto?
+QUE HACE Comportamientos de un objeto. 
+
 [Módulo - 03] Miembros estáticos y de instancia:
 (016) - ¿Qué es un método estático? ¿En qué se diferencia de los métodos de
 instancia (no estáticos)?
+Un método de instancia es el que se invoca siempre sobre una instancia (objeto) de una clase. 
+Por ejemplo p1.getNombre(); siendo p1 un objeto de tipo Persona es un método de instancia: para invocarlo necesitamos una instancia de persona. 
+Un método de clase (ESTATICO) es aquel que puede ser invocado sin existir una instancia.
+
 (017) - ¿Qué es una clase estática? ¿En qué se diferencia de las clases no estáticas?
-(018) - ¿Puedo tener miembros estáticos en clases no-estáticas? ¿Puedo tener
-miembros no-estáticos en clases estáticas?
+Una static class es aquella clase que se usa sin necesidad de realizar una instanciación de la misma. 
+Se utiliza como una unidad de organización para métodos no asociados a objetos particulares y separa datos y comportamientos que son independientes de cualquier identidad del objeto.
+Las clases estáticas son adecuadas cuando no tienen que almacenar información, sino sólo realizar cálculos o algún proceso que no cambie. 
+Los datos de miembros estáticos se almacenan en una zona especial del Heap denominado High Frequency Heap.
+En el .NET Framework tenemos ejemplos de clases estáticas como System.Console, System.Math, System.Environment, etc…
+Los requisitos a la hora de crear una clase estática son los siguientes:
+La clase debe derivar directamente de System.Object porque la herencia se aplica a clases de instancia y como hemos dicho, una clase estática no realiza intanciación alguna.
+La clase no debe implementar ningún interfaz ya que que los métodos del interfaz son llamados en una instancia de la clase.
+La clase debe definir únicamente miembros estáticos. Cualquier miembro de instancia provocará un error de compilación.
+La clase no puede usarse como un campo, como parámetro de un método o como variable local ya que todos estos conceptos refieren a una instancia.
+Sólo puede contener constructores estáticos y privados.
+Se usa el modificador static para definir una clase o miembro estàtico.
+
+(018) - ¿Puedo tener miembros estáticos en clases no-estáticas?
+Si. 
+¿Puedo tener miembros no-estáticos en clases estáticas?
+No.
+
 (019) - ¿Necesito instanciar un objeto de la clase para llamar a sus métodos estáticos?
+No.
+
 (020) - ¿Cuántos valores distintos pueden existir para un campo estático y cuántos de
 uno no-estático cuando se crearon 5 instancias de la clase?
+El mismo, porque es estatico. En un campo no estatico con 5 instancias de la clase 5.
+
 (021) - ¿Se puede usar el operador “this” dentro de un método estático? ¿Se puede
 acceder a miembros no-estáticos desde un método estático de la misma clase? ¿Se
 puede acceder a miembros estáticos desde un método de instancia?
+No, porque se puede llamar sin instanciar. Un metodo estatico no puede acceder a los atributos salvo que sean estaticos pero uno de instancia
+si puede acceder a miembros estaticos.
+
 (022) - ¿Se pueden declarar variables estáticas dentro de un método (locales)?
+No porque las variables estaticas se deben inicializar una vez al inicio de ejecucion, no en un metodo.
+
 (023) - De dos ejemplos de métodos estáticos que pertenezcan a las clases de .NET
 Framework.
+Math.Pow y Console.WriteLine.
+
 (024) - De un ejemplo de un método de instancia que pertenezca a las clases de .NET
 Framework.
+Next de la clase Ramdon, Array.
+
 [Módulo - 04] Namespaces y directivas:
+
 (025) - ¿Qué es un namespace y cuál es su función principal?
-(026) - ¿Puedo tener distintos namespaces dentro de un mismo proyecto o
-ensamblado de .NET?
+Es una agrupacion logica de clases y otros elementos.Su funcion principal es organizar codigo.
+
+(026) - ¿Puedo tener distintos namespaces dentro de un mismo proyecto o ensamblado de .NET?
+Es posible pero no se recomienda.
+
 (027) - ¿Para qué se usa la directiva using?
+Para agregar bibliotecas, permite la llamada a diferentes metodos.
+
 (028) - ¿Para qué se usa la directiva alias?
+Para renombrar internamente un namespace.
+
 (029) - ¿Puedo declarar dos clases independientes/distintas con el mismo
 identificador dentro del mismo namespace? ¿Y en namespaces distintos?
+En el mismo no, en distintas si.
+
+
 [Módulo - 05] Objetos:
 (030) - ¿Los objetos se crean en tiempo de diseño, de compilación o de ejecución?
+Los objetos se crean en tiempo de ejecucion.
+
 (031) - ¿Cuántos objetos de tipo Alumno puedo tener en mi sistema? ¿Cuántas clases
 Alumno tengo en mi sistema? (Dentro de un mismo namespace).
+Objetos de tipo alumno todos los que quieras, clases Alumno una sola dentro de un namespace.
+
 (032) - Explique el ciclo de vida de un objeto. Detalle las funciones del operador new,
 del constructor y del Garbage Collector.
+CREACION DEL OBJETO, RESERVA DE MEMORIA, INICIALIZACION DEL CONSTRUCTOR, UTILIZACION Y DESTRUCCION.
+El operador new se utiliza para asignar memoria. El constructor se utiliza para inicializar un objeto en esa memoria. 
+Destrucciòn del objeto:
+se pierde la referencia en memoria ya sea por finalizacion del programa, cambio o eliminacion de la variable. 
+El garbage collector liberara memoria cuando lo crea necesario.
+
+
 (033) - ¿En qué segmento de memoria se almacenan los tipos valor (value type) y en
 cuál los tipos por referencia (reference type)? ¿En cuál interfiere al Garbage
 Collector?
+RESUMEN: LOS TIPOS VALOR SE ALMACEN EN EL STACK(PILA), LOS TIPOS POR REFERENCIA EN EL HEAP(MONTON). En garbage interfiere en los tipos por referencia.
+
+
 (034) - Compare y describa: Destrucción determinista y no determinista. Asocie con
 el concepto de variables y objetos.
-PROGRAMACIÓN II 4
+
+El tiempo de vida de una variable local está vinculado al ámbito en el que está declarada. Tiempo de vida corto (en general).POR EJEMPLO INT DATOS PRIMITIVOS
+Creación y destrucción deterministas.
+
+El tiempo de vida de un objeto dinámico no está vinculado a su ámbito. Tiempo de vida más largo. Destrucción no determinista.//una variable por ejemplo global.
+
 (035) - ¿Cuál es la diferencia entre declarar, inicializar e instanciar un objeto?
+Declarar es dar una referencia de una clase pero con valor null, inicializar significa darle algun tipo de valor distinto de null, y instanciar es invocar al constructor
+con el operador new.
+
+
 [Módulo - 06] Constantes:
 (036) - ¿Qué es una constante? ¿Se puede declarar constantes estáticas (static const)?
+Una constante es otro tipo de campo. No cambia, no es variable.
+Las constantes se declaran con la palabra clave const; son útiles para que el código sea más legible. No, la constante ya es statica.
+
 (037) - ¿Cuándo se asigna el valor a las constantes (tiempo de compilación o
 ejecución)? ¿Dos objetos del mismo tipo pueden tener distintos valores en una
 misma constante? Relacione con atributos de instancia y estáticos.
+Se asigna valor a las constantes en tiempo de compilacion. No se puede porque las constantes no puede cambiar.
+
+
 [Módulo - 07] Constructores:
 (038) - ¿Qué es un constructor? ¿Cuál es su función?
+Los constructores son métodos especiales que se utilizan para inicializar objetos al momento de su creación.
+En C#, la única forma de crear un objeto es mediante el uso de la palabra reservada new para adquirir y asignar memoria. 
+
+
 (039) - ¿Qué es el constructor por defecto? ¿Qué sucede con el mismo cuando
 declaramos un constructor nuevo en la clase?
+Crea una instancia y establece las variables miembro en sus respectivos valores predeterminados, null false y 0. El mismo dejara de existir cuando se cree
+otro constructor con parametros. 
+
 (040) - ¿Con qué valores se cargan los atributos cuando se llama al constructor por
 defecto?
+False, null y 0.
+
 (041) - ¿Qué es y para qué sirve un constructor estático? ¿En qué se diferencia su
 sintaxis de los constructores de instancia?
+Un constructor sin parametros que se usa para inicializar datos estaticos o para realizar acciones que se hagan una unica vez.
+
 (042) - ¿Cuántas veces se puede llamar a un constructor estático? ¿Quién lo puede
 llamar?
+Una sola vez. El clr lo llama.Se invoca automaticamente para inicializar la clase antes de la primera instancia.
+
 (043) - ¿Se ejecutará primero un constructor estático o uno de instancia?
+Uno estatico primero.
+
 [Módulo - 08] Sobrecargas (Overload):
 (044) - ¿Qué significa sobrecargar un método o constructor?
+Recrearlo para darle nueva funcionalidad con otros parametros.
+
 (045) - ¿Qué debe cambiar para que la sobrecarga de un método o constructor sea
 válida?
+Los parametros, orden o tipo.
+
 (046) - ¿La sobrecarga se resuelve en tiempo de ejecución o en tiempo de
 compilación? ¿Cómo se distingue a qué sobrecarga llamar?
+Tiempo de compilacion static, (tiempo de ejecucion dinamica de polimorfismo?) Cuando vas escribiendo segun los parametros el 
+compilador se da cuenta.
+
 (047) - ¿Se tiene en cuenta el nombre o identificador de los parámetros de entrada
 para una sobrecarga?
+No.
+
 (048) - ¿Se tiene en cuenta el modificador de visibilidad para una sobrecarga?
+No.
+
 [Módulo - 09] Sobrecarga de métodos:
 (049) - ¿Los métodos pueden tener el mismo nombre que otros elementos de una
 misma clase? (atributos, propiedades, etc).
+No.
+
 (050) - Mencione dos razones por las cuales se sobrecargan los métodos.
+Añadir funcionaliad al codigo y metodos similares que requieran parametros distintos.
+
 (051) - ¿Los métodos estáticos pueden ser sobrecargados?
+Si.
+
 (052) - ¿Agregar el modificador “static” sin cambiar los parámetros de entrada es una
 sobrecarga válida?
+No.
+
 (053) - ¿Agregar un modificador “out” o “ref” en la firma del método sin cambiar nada
 más es una sobrecarga válida?
+Si. out y ref son dos formas de pasar variable por referencia, pero a out te obliga a pasar un valor,
+
 (054) - ¿Cambiar el tipo de retorno sin cambiar los parámetros de entrada es una
 sobrecarga válida?
+No.
+
 (055) - Si tenemos distintas sobrecargas de un método, ¿cómo podemos reutilizar
 código?
+Se puede reutilizar al usar instancias o llamando metodos.
+
+
+
 [Módulo - 10] Sobrecarga de constructores:
 (056) - ¿Para qué se utiliza el operador “this()”?
+Para hacer referencia al constructor de la clase en la que estoy.
+
 (057) - ¿Se pueden sobrecargar los constructores estáticos?
+No.
+
 (058) - ¿Se puede llamar a un constructor estático con el operador “this()”?
+No.
+
 (059) - ¿Se puede llamar a constructores de otras clases con el operador “this()”?
+No.
+
 (060) - ¿Se puede sobrecargar un constructor privado?
+Si.
+
+
+
 [Módulo - 11] Sobrecarga de operadores:
 (061) - ¿Qué es un operador? ¿En qué se diferencian un operador unario y un
 operador binario? De un ejemplo de cada uno.
+Un elemento que se aplica a uno o mas operandos en una instruccion.
+En el unario se utiliza un solo operando ++, en el binario se utilizan dos != +=
+
 (062) - ¿Qué varía en la sintaxis de la sobrecarga de operadores unarios y binarios?
+La cantidad de parametros.
+
 (063) - ¿Se pueden sobrecargar los operadores de operación y asignación (+=, -=, *=,
 /=)? ¿Por qué?
+No porque al sobrecargar el operador + por ejemplo, ya se puede utilizar con el operador igual en conjunto.
+
 (064) - ¿Cuál es la diferencia entre un operador de conversión implícito y uno
 explícito? (En finalidad, declaración y aplicación)
+En el explicito hay que castear, en la firma uno utiliza explicit y el otro implicit. En aplicacion si usas un operador explicito puede haber perdida de datos. En la
+implicita no hay perdida de datos.
+
 (065) - Los operadores de casteo “(T)x” no se pueden sobrecargar. ¿Cuál es la
 alternativa?
+Sobrecarga explicita de un metodo.
+
 (066) - ¿Cuál es la diferencia entre castear (casting), convertir (converting) y parsear
 (parsing)? 
+Cuando haces casting es porque esperas que se pueda perder informacion , cuando haces converting (transforma el valor de una variable por otro),
+ el parsing es para convertir un string a otro.
 
 
-PROGRAMACIÓN II 6
 [Módulo - 12] Formularios:
 (067) - ¿Los formularios son objetos?
 Si.
@@ -154,12 +335,15 @@ el Show() abre un form pero no bloquea al resto, puede abrir varios formulario y
 un contenedor MDI? ¿Con qué propiedad del formulario hijo indico cuál es el
 formulario MDI padre?
 Un formulario MDI es un formulario (llamado "Padre" o "Parent") que puede contener otros formularios (llamados "Hijos" o "Child"). 
-Para trabajar con este tipo de formularios se ejecuta el Visual C# y se crea un nuevo proyecto del tipo "Windows Application".
+//Para trabajar con este tipo de formularios se ejecuta el Visual C# y se crea un nuevo proyecto del tipo "Windows Application".
  De forma automàtica se crea un formulario con nombre "Form1". En la ventana Propiedades, se busca la propiedad "IsMDIContainer" y se cambia a "True". 
 Luego en el menú se elige Proyectos -> Agregar Windows Form. Aparecerá la ventana de "Agregar Nuevo Elemento". Se elige "Windows Form".
 
 (073) - Explique el ciclo de vida de los formularios asociándolo a sus eventos
 correspondientes.
+New instsncia el formulario. Load lo pone en memoria, pero invisible. Paint dibuja el formulario y sus controles. 
+Activated el formulario recibe el foco. FormClosing permite cancelar el cierre. FormClosed el formulario ya es invisible. Disposed el objeto es destruido.
+
 
 [Módulo - 13] Arrays:
 (074) - ¿Qué es un array “jagged”? ¿En qué valor se inicializan sus elementos?
@@ -173,6 +357,7 @@ Que el primer elemento agregado se inicializa en la posicion 0 del array.
 
 (077) - Los arrays implementan la interfaz IEnumerable, ¿qué es lo que esto les
 permite hacer?
+PERMITE USAR FOREACH PARA RECORRER EL ARRAY.
 IEnumerable contains a single method, GetEnumerator, which returns an IEnumerator. 
 IEnumerator provides the ability to iterate through the collection by exposing a Current property and MoveNext and Reset methods.
 
@@ -188,12 +373,13 @@ a. int[ , , ] a = new int[ 3, 2, 3 ];
 int[ , ] b = new int[ 5, 4 ];
 
 Console.WriteLine(“Array Length = {0}”, a.Length + b.Length);
-10????
+La respuesta el 38.
+
 
 [Módulo - 14] Strings:
 (080) - ¿Es lo mismo declarar una variable como string (en minúscula) o como String
 (con la primera letra en mayúscula)? ¿Por qué?
-Si, porque string deriba de String, es un alias.
+Si, porque string deriva de String, es un alias.
 
 (081) - ¿Se puede recorrer un string con un foreach? ¿Por qué?
 Si, porque un string es una cadena de caracteres y cada letra tiene una "posicion", se puede haciendo foreach char c in nombredelstring
@@ -203,7 +389,9 @@ usamos métodos u operadores para modificar un string?
 Que no se pueden modificar una vez creados. Cuando usamos metodos u operadores para modificar un string en realidad lo que se hace es crear un string nuevo con el mismo
 nombre de la variable con la modificacion y la referencia al anterior string se pierde referencia por lo tanto sera recogido por el garbage collector.
 
+
 [Módulo - 15] Colecciones:
+
 (083) - ¿Cuál es la diferencia entre las colecciones y las matrices?
 A diferencia de las matrices, el grupo de objetos con el que trabaja puede aumentar y reducirse dinámicamente 
 a medida que cambian las necesidades de la aplicación.
@@ -246,9 +434,11 @@ ordenarla y recien ahi convertirla en una cola o pila nueva.
 
 (090) - ¿Cuál es la diferencia entre las colas y pilas genéricas y las colas y pilas no
 genéricas?
+Las genericas solo pueden tener un tipo de dato, las no genericas almacenan los datos como objet, por lo tanto pueden tener diferentes tipos de datos.
+genericas = Stack <int> cosa = new Stack <int>();  NO GENERICA Stack cosa = new Stack(); ---> a esta se le puede cargar int o string o lo que sea
 
 (091) - ¿Qué muestra el siguiente código?
-PROGRAMACIÓN II 8
+
 a. 1, 2, 3, 4, 5,
 b. 5, 4, 3, 2, 1,
 c. 8, 6, 4, 2, 0,
@@ -257,100 +447,196 @@ e. 1, 3, 5, 7, 9,
 f. 9, 7, 5, 3, 1,
 g. Error en tiempo de ejecución. Marcar error.
 h. Error en tiempo de diseño. Marcar error.
+
+
+
 [Módulo - 16] Propiedades:
 (092) - ¿Qué es y para qué sirve una propiedad?
+
 (093) - ¿Para qué sirve el descriptor de acceso “get”?
+get te trae los datos.
+
 (094) - ¿Para qué sirve el descriptor de acceso “set”? ¿Cuál es el papel de la palabra
 clave “value”?
+Set setea el valor que se le ingrese, value es el valor del atributo al que esta haciendo referencia la propiedad.
+
 (095) - ¿Cómo declaro una propiedad de sólo lectura?
+get
 (096) - ¿Cómo declaro una propiedad de sólo escritura?
+set
+
+
+
 [Módulo - 17] Enumerados:
 (097) - ¿Qué es un enumerado? ¿Cuál es su función?
+Es un tipo de dato constante, puede estar en un archivo aparte dentro de namespace. 
+
 (098) - ¿Un enumerado sólo puede estar anidado dentro de una clase?
+No.
+
 (099) - ¿Cuál es el primer valor numérico de un enumerado por defecto? ¿Se pueden
 sobrescribir los valores por defecto?
+El valor por defecto es 0, si.
+
 (100) - Indique los valores asociados a cada constante:
-enum Day {Sat, Sun, Mon=15, Tue, Wed, Thu=2, Fri};
+enum Day 
+{
+Sat, --->0
+Sun, ---->1
+Mon=15, 
+Tue, ---->16
+Wed, --->17
+Thu=2, 
+Fri--->3};
+
+
+
 [Módulo - 18] Indexadores:
 (101) - ¿Qué significa indexar?
+Registrar ordenamiento segun un criterio.
+
 (102) - ¿Qué permite un indexador (función)?
+Los indexadores permiten a la instancia de una clase ser indexada tal cómo un array.
+
+
 (103) - ¿Cuál es la diferencia a la hora de declarar un indexador y una propiedad?
+Recibe parametros y utiliza this para su definicion.
+
 (104) - ¿Los indexadores solo se pueden indexar por valores numéricos?
+no es necesario.
+
 (105) - ¿Un indexador puede recibir más de un parámetro (ser multidimensionales)?
+Si, como una matriz.
+
 (106) - ¿Los indexadores pueden ser sobrecargados?
+Si porque podemos cambiar el orden y tipo de parametro.
+
 (107) - ¿Cuál es el papel de la palabra clave “this” en un indexador?
+
+
 (108) - ¿Cuál es el papel de la palabra clave “value” en un indexador?
+
+
 (109) - ¿Se pueden declarar indexadores estáticos? ¿Por qué?
+No. porque se utiliza this.
+
 [Módulo - 19] Encapsulamiento:
 (110) - Defina encapsulamiento / encapsulación en el contexto del paradigma
 orientado a objetos.
+
 (111) - Defina cada nivel de ocultamiento / accesibilidad de la programación
 orientada a objetos. Incluya la función del modificador “internal” en C#.
+public private protected internal
+
+
 [Módulo - 20] Herencia:
 (112) - ¿Qué es la herencia en el contexto de la programación orientada a objetos?
 ¿Cuál es su propósito?
+
 (113) - ¿Qué nombre recibe la clase que hereda y qué nombre recibe la clase que es
 heredada?
+padre, hija
 (114) - ¿Qué significa que la herencia es transitiva?
+
 (115) - ¿Se heredan los constructores?
+no
 (116) - ¿Se heredan los miembros private de la clase base?
+si
 (117) - ¿Qué es herencia múltiple? ¿Es posible en C#? ¿En qué se diferencia de la
 herencia simple?
+No.
+
 (118) - ¿Una clase pública puede heredar de una clase privada?
+NOOOO.,
+
 (119) - ¿Qué es una clase sellada (sealed)?
+Una sealed no puede heredar.
+
 (120) - ¿Una clase sellada puede heredar de otras clases? (Ser clase derivada)
+SI.
+
 (121) - ¿Cómo actúa el modificador “protected” en los miembros de la clase base para
 una clase derivada y cómo para una clase no-derivada? Relacionar la respuesta con
 los modificadores “public” y “private”.
+los miembros protected para una clase derivada es como si fuesen public, para los no derivados es como si fueran private.
+
 (122) - ¿Qué pasa si la clase derivada no hace una llamada explícita a un constructor
 de la clase base? En esta situación, ¿qué pasa si la clase base declaró explícitamente
 un constructor con parámetros de entrada?
+Tira error, no te deja hacer el constructor, los atributos se heredan y hay que utilizarlos.
+
+
 [Módulo - 21] Polimorfismo:
 (123) - ¿Qué es el polimorfismo en el contexto de la programación orientada a
 objetos?
-PROGRAMACIÓN II 10
+Para un mismo comportamiento voy a tener diferentes implementaciones y en tiempo de ejecucion segun que tipo de objeto tengo.
+
 (124) - ¿Qué implica el polimorfismo basado en herencia?
+Es que cuando tengo una clase base puede suplantar a las heredades. Por ejemplo si tenes animal puede suplantar a perro, pero perro no a animal.
+
+
 [Módulo - 22] Sobreescritura de métodos (Override):
 (125) - ¿Dónde reside la definición del método a sobrescribir? ¿Qué palabra clave se
 usa para definirlo?
+En la clase base, virtual.
+
 (126) - ¿Dónde reside la implementación del método a sobrescribir? ¿Qué palabra
 clave se usa para implementarlo?
+en la clase derivada, override.
+
 (127) - ¿Cuándo se resuelve la invocación? (Tiempo de ejecución o compilación)
+En tiempo de ejecucion.
+
 (128) - ¿Cuáles son las diferencias entre sobrecargar (overload) y sobrescribir
 (override) un método? (Llenar la tabla)
 
-Criterio Sobrecargar /
-Overload
-Sobrescribir /
-Override
-Firma (Diferencias o no diferencias en las firmas)
-Ubicación (Misma clase / Clases diferentes)
-Tiempo de resolución (Compilación / Ejecución)
-Tipo objeto / Tipo Referencia (¿Qué determina
+Criterio Sobrecargar / 
+Firma (Diferencias o no diferencias en las firmas) 
+Ubicación (Misma clase / Clases diferentes)  
+Tiempo de resolución (Compilación / 
+Ejecución) Tipo objeto / 
+Tipo Referencia (¿Qué determina
 cuál implementación se utilizará?)
+
+Overload/SOBRECARGAR /firma distinta./ubicacion iguales./tiempo compilacion /referencia
+Sobrescribir/OVERRIDE / firma iguales,/ubicacion distintas,/tiempo ejecucion /objeto
+
+
+
+
 [Módulo - 23] Clases y miembros abstractos:
 (129) - Si quiero declarar un método que pueda ser sobrescrito en las clases derivadas,
 ¿qué modificador debo usar?
+Se utiliza el modificador virtual.
+
 (130) - Si quiero declarar un método que deba ser sobrescrito en las clases derivadas,
 ¿qué modificador debo usar?
+Se utiliza el modificador abstract.
+
+
 (131) - ¿Qué es una clase abstracta? ¿Cuál es su función?
+Una clase abstracta no se puede instanciar, determina un marco de trabajo para le jerarquia de herencia.
+
+
 (132) - Las clases no-abstractas que derivan de una clase abstracta, ¿deben
 implementar todos sus métodos abstractos?
+Si. te obliga.
+
 (133) - Las clases abstractas que derivan de una clase abstracta, ¿deben implementar
 todos sus métodos abstractos?
+No.
+
 (134) - ¿Se pueden declarar miembros abstractos en clases no-abstractas?
+No.
+
 (135) - ¿Para sobrescribir un método se debe heredar de una clase abstracta?
-PROGRAMACIÓN II 11
+Si.
+
 (136) - Llenar los campos de la siguiente tabla con SÍ o NO según corresponda.
-Tipo de Clase Puede heredar de
-otras clases (ser
-derivada)
-Puede heredarse
-de ella (ser base)
-Puede ser
-instanciada
-normal (sin
-modificadores)
-abstract
-sealed
-static
+Tipo de Clase ///Puede heredar de otras clases ///Puede heredarse de ella ///Puede ser instancia
+		(ser derivada)    		(ser base)				
+
+normal			si				si			si
+abstract		si				si			no	
+sealed			si				no			si
+static			no				no			no
