@@ -14,10 +14,9 @@ namespace practica
         {
             SistemaSolar sistema = new SistemaSolar();
             SistemaSolar sistema2 = new SistemaSolar();
-            Tipo tp = new Tipo();
 
-            Planeta planet = new Planeta(22, 10, "Tierra",7,tp);
-            Planeta p2 = new Planeta(100, 10, "Saturno", 8, tp);
+            Planeta planet = new Planeta(22, 10, "Tierra",7,ETipo.Gaseoso);
+            Planeta p2 = new Planeta(100, 10, "Saturno", 8, ETipo.Rocoso);
             Satelite s1 = new Satelite(4, 1, "Anillos");
             Satelite s2 = new Satelite(6, 2, "Tito");
             Satelite satelit = new Satelite(1, 2, "Luna");

@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    public class Tipo
-    {
+
         public enum ETipo
         {
             Rocoso,
             Gaseoso
         }
-    }
+
 }

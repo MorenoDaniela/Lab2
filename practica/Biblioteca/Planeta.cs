@@ -9,7 +9,7 @@ namespace Biblioteca
     public class Planeta : Astro
     {
         private int cantSatelites;
-        private Tipo tipo;
+        private ETipo tipo;
 
 
         private List<Astro> satelites;
@@ -25,13 +25,13 @@ namespace Biblioteca
             satelites = new List<Astro>();
         }
 
-        public Planeta(int duraOrb, int duraRota, string nombre, int cantSatelites, Tipo tipo)
+        public Planeta(int duraOrb, int duraRota, string nombre, int cantSatelites,ETipo tipo)
             : this(duraOrb, duraRota, nombre)
         {
             this.cantSatelites = cantSatelites;
             this.tipo = tipo;
         }
-
+        
         public static bool operator ==(Planeta p1, Planeta p2)
         {
             bool retorno = false;
@@ -76,27 +76,16 @@ namespace Biblioteca
             return !(p1 == s1);
         }
 
-        public static bool operator +(Planeta planeta, Satelite s1)
-        {
-            /*
-            if (s1 is Satelite)
-            {
-                planeta.Satelites.Add(s1);
-                return true;
-            }
-            else
-            {
-                return false;
-            }*/
-            
+        public static bool operator +(Planeta planeta, Astro astro)
+        {   
             bool retorno = false;
-            if (!(planeta is null) && !(s1 is null))
+            if (!(planeta is null) && !(astro is null))
             {
                 if (planeta.cantSatelites > planeta.satelites.Count)
                 {
-                    if (s1 is Satelite)
+                    if (astro is Satelite)
                     {
-                        planeta.satelites.Add(s1);
+                        planeta.satelites.Add(astro);
                         retorno = true;
                     }
                 }
@@ -108,23 +97,23 @@ namespace Biblioteca
         public override string Orbitar()
         {
             StringBuilder cadena = new StringBuilder();
-            cadena.AppendFormat("Orbita el planeta: {0}", this.nombre);
+            cadena.AppendFormat("Orbita el planeta: {0} \n", this.nombre);
             return cadena.ToString();
         }
 
         public new string Rotar()
         {
             StringBuilder cadena = new StringBuilder();
-            cadena.AppendFormat("Orbita el planeta: {0}", this.nombre);
+            cadena.AppendFormat("Orbita el planeta: {0} \n", this.nombre);
             return cadena.ToString();
         }
 
         public override string ToString()
         {
             StringBuilder cadena = new StringBuilder();
-            cadena.AppendFormat("", base.Mostrar());
+            cadena.AppendLine(base.Mostrar());
             cadena.AppendFormat("Cantidad satelites: {0} \n", this.cantSatelites);
-            cadena.AppendFormat("Tipo: {0}", this.tipo);
+            cadena.AppendFormat("Tipo: {0} \n", this.tipo);
             cadena.AppendFormat(this.Orbitar());
             cadena.AppendFormat(this.Rotar());
 
