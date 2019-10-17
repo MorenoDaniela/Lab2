@@ -4,3 +4,9 @@ C:\Users\Dell\source\repos\Entidades\Entidades\obj\Debug\Entidades.csprojAssembl
 C:\Users\Dell\source\repos\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Dell\source\repos\Entidades\Entidades\obj\Debug\Entidades.dll
 C:\Users\Dell\source\repos\Entidades\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Dell\Desktop\Lab2\Entidades\Entidades\bin\Debug\Entidades.dll
+C:\Users\Dell\Desktop\Lab2\Entidades\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Dell\Desktop\Lab2\Entidades\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\Lab2\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\Lab2\Entidades\Entidades\obj\Debug\Entidades.dll
+C:\Users\Dell\Desktop\Lab2\Entidades\Entidades\obj\Debug\Entidades.pdb

@@ -149,6 +149,8 @@ namespace Entidades
                     c.AgregarLlamada(call);
                     central = c;
                 }
+                else
+                    throw new CentralitaException("Ya se encuentra en la central la llamada: "+call.ToString(), "Clase Centralita", "Operador +");
             }
 
             return central;

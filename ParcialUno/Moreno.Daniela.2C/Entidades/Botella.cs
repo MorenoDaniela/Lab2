@@ -7,25 +7,63 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Clase abstracta Botella.
+    /// </summary>
     public abstract class Botella
     {
+        #region "Atributos"
         protected int capacidadML;
         protected int contenidoML;
         protected string marca;
+        #endregion}
 
+        #region "Enumerados"
+        /// <summary>
+        /// Tipo de botella.
+        /// </summary>
         public enum Tipo
         {
             Plastico,
             Vidrio
         }
+        #endregion
 
+        #region "Constructores"
+        /// <summary>
+        /// Crea un objeto de tipo Botella. 
+        /// </summary>
+        /// <param name="marca"></param>
+        /// <param name="capacidadML"></param>
+        /// <param name="contenidoML"></param>
+        protected Botella(string marca, int capacidadML, int contenidoML)
+        {
+            this.marca = marca;
+            this.capacidadML = capacidadML;
+            if (contenidoML <= capacidadML)
+            {
+                this.contenidoML = contenidoML;
+            }
+            else if (capacidadML <= contenidoML)
+            {
+                this.contenidoML = capacidadML;
+            }
 
+        }
+        #endregion
+
+        #region "Propiedades"
+        /// <summary>
+        /// Devuelve la capacidad de una botella en litros.
+        /// </summary>
         public int CapacidadLitros
         {
             get { return capacidadML / 1000; }
-            //set { capacidad = value; }
         }
 
+        /// <summary>
+        /// Contenido de una botella.
+        /// </summary>
         public int Contenido
         {
             get
@@ -38,45 +76,46 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Devuelve el porcentaje contenido de una botella.
+        /// </summary>
         public float PorcentajeContenido
         {
             get
             {
-                return (contenidoML*capacidadML)/ 100;
+                return (contenidoML*100)/ capacidadML;
             }
         }
+        #endregion
 
-        protected Botella(string marca, int capacidadML, int contenidoML)
-        {
-            this.marca = marca;
-            if (contenidoML<capacidadML)
-            {
-                this.capacidadML = capacidadML;
-                this.contenidoML = contenidoML;
-            }else if (capacidadML<contenidoML)
-            {
-                this.contenidoML = capacidadML;
-                this.capacidadML = capacidadML;
-            }
-            
-        }
-
+        #region "Metodos"
+        /// <summary>
+        /// Metodo abstracto, no tiene implementacion, si la tendra en sus clases hijas.
+        /// </summary>
+        /// <returns></returns>
         public abstract int ServirMedida();
 
+        /// <summary>
+        /// Muestra todos los atributos de una botella.
+        /// </summary>
+        /// <returns></returns>
         protected virtual string GenerarInforme()
         {
             StringBuilder cadena = new StringBuilder();
-            cadena.AppendFormat("Marca: {0} \n Contenido: {1}\n Capacidad: {2} \n", this.marca, this.Contenido, this.CapacidadLitros);
+            cadena.AppendFormat("Marca: {0} \n Contenido: {1} ml\n Capacidad: {2} ml \n Porcentaje contenido: {3}% \n", this.marca, this.contenidoML, this.capacidadML,this.PorcentajeContenido);
             return cadena.ToString();
         }
 
+        /// <summary>
+        /// Sobreescritura del metodo ToString, invoca al metodo GenerarInforme.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
-            return this.GenerarInforme();
-        
+            return GenerarInforme();
         }
 
-
+        #endregion
 
     }
 }
