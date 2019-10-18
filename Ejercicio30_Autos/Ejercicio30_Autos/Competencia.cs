@@ -53,9 +53,25 @@ namespace Ejercicio30_Autos
             {
                 if (c.cantidadCompetidores>c.competidores.Count && c!=a)
                 {
+                    a.EnCompetencia = true;
+                    Random numero = new Random();
+                    int aux = numero.Next();
+                    a.CantidadCombustible = (short)aux;
+                    a.VueltasRestantes = c.cantidadVueltas;
                     c.competidores.Add(a);
                     retorno = true;
                 }
+            }
+            return retorno;
+        }
+
+        public static bool operator -(Competencia c, AutoF1 a)
+        {
+            bool retorno = false;
+            if (!(c is null) && !(a is null))
+            {
+                c.competidores.Remove(a);
+                retorno = true;
             }
             return retorno;
         }

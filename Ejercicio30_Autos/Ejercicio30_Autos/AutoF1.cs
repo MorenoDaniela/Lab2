@@ -6,39 +6,26 @@ using System.Threading.Tasks;
 
 namespace Ejercicio30_Autos
 {
-    public class AutoF1
+    public class AutoF1 : VehiculoDeCarrera
     {
-        private short cantidadCombustible;
-        private bool enCompetencia;
-        private string escuderia;
-        private short numero;
-        private short vueltasRestantes;
-
+        private short caballosDeFuerza;
+        
+        public short CaballosDeFuerza
+        {
+            get { return this.caballosDeFuerza; }
+            set { caballosDeFuerza = value; }
+        }
+        
         public AutoF1(short numero, string escuderia)
+            : base (numero, escuderia)
         {
-            this.numero = numero;
-            this.escuderia = escuderia;
-            this.cantidadCombustible = 0;
-            this.enCompetencia = false;
-            this.vueltasRestantes = 0;
 
         }
-        public short CantidadCombustible
-        {
-            get { return this.cantidadCombustible; }
-            set { cantidadCombustible = value; }
-        }
 
-        public bool EnCompetencia
+        public AutoF1(short numero, string escuderia, short caballosDeFuerza)
+            : this(numero, escuderia)
         {
-            get { return this.enCompetencia; }
-            set { enCompetencia = value; }
-        }
-
-        public short VueltasRestantes
-        {
-            get { return this.vueltasRestantes; }
-            set { vueltasRestantes = value; }
+            this.caballosDeFuerza = caballosDeFuerza;
         }
 
         public static bool operator ==(AutoF1 a1, AutoF1 a2)
@@ -46,7 +33,7 @@ namespace Ejercicio30_Autos
             bool retorno = false;
             if (!(a1 is null) && !(a2 is null))
             {
-                if (a1.numero == a2.numero && a1.escuderia == a2.escuderia)
+                if (a1 == a2 && a1.caballosDeFuerza == a2.caballosDeFuerza)
                 {
                     retorno = true;
                 }
@@ -61,21 +48,12 @@ namespace Ejercicio30_Autos
         }
 
 
-        public string MostrarDatos()
+        public override string MostrarDatos()
         {
             StringBuilder cadena = new StringBuilder();
-            if (this.enCompetencia)
-            {
-                cadena.AppendLine("Auto en competencia");
-                cadena.AppendFormat("Combustible: {0} Escuderia: {1} Numero: {2} Vueltas restantes: {3}", this.cantidadCombustible, this.escuderia, this.numero, this.vueltasRestantes);
-
-            }else
-            {
-                cadena.AppendLine("Auto fuera de competencia");
-                cadena.AppendFormat("Combustible: {0} Escuderia: {1} Numero: {2} Vueltas restantes: {3}", this.cantidadCombustible, this.escuderia, this.numero, this.vueltasRestantes);
-            }
+            cadena.AppendFormat("{0}", base.MostrarDatos());
+            cadena.AppendFormat("Caballos de fuerza: {0} \n", this.caballosDeFuerza);
             return cadena.ToString();
-            
         }
     }
 }

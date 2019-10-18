@@ -172,14 +172,28 @@ namespace CentralitaForm
                 Provincial.Franja franjas;
                 Enum.TryParse<Provincial.Franja>(cmbFranja.SelectedValue.ToString(), out franjas);
                 Provincial prov = new Provincial(txtBoxOrigen.Text, franjas, (float)duracion, txtBoxDestino.Text);
-                llamada += prov;
+                try
+                {
+                    llamada += prov;
+                } catch(CentralitaException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
                 BtnLimpiar_Click(sender, e);
             }else if (txtBoxOrigen.Text!="Nro Origen")
             {
                 int costo = num.Next(5, 56);
                 float costoF = costo / 10;
                 Local local = new Local(txtBoxOrigen.Text, duracion, txtBoxDestino.Text, costoF);
-                llamada += local;
+                try
+                {
+                    llamada += local;
+                }catch (CentralitaException ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+               
                 BtnLimpiar_Click(sender, e);
             }
         }
