@@ -35,11 +35,6 @@ namespace CentralitaForm
         }
 
 
-        private void FrmLlamador_Load(object sender, EventArgs e)
-        {
-
-        }
-
 #region NUMEROS
         private void Btn1_Click(object sender, EventArgs e)
         {
@@ -163,6 +158,7 @@ namespace CentralitaForm
         {
             Random num = new Random();
             int duracion = num.Next(1, 50);
+            Llamada call=null;
            
             if (txtBoxDestino.Text.StartsWith("#") && txtBoxDestino.Text!="Nro Destino")
             {
@@ -171,31 +167,26 @@ namespace CentralitaForm
                 // Lectura
                 Provincial.Franja franjas;
                 Enum.TryParse<Provincial.Franja>(cmbFranja.SelectedValue.ToString(), out franjas);
-                Provincial prov = new Provincial(txtBoxOrigen.Text, franjas, (float)duracion, txtBoxDestino.Text);
-                try
-                {
-                    llamada += prov;
-                } catch(CentralitaException ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                
-                BtnLimpiar_Click(sender, e);
+                call = new Provincial(txtBoxOrigen.Text, franjas, (float)duracion, txtBoxDestino.Text);
+
             }else if (txtBoxOrigen.Text!="Nro Origen")
             {
                 int costo = num.Next(5, 56);
                 float costoF = costo / 10;
-                Local local = new Local(txtBoxOrigen.Text, duracion, txtBoxDestino.Text, costoF);
-                try
-                {
-                    llamada += local;
-                }catch (CentralitaException ex)
-                {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-               
-                BtnLimpiar_Click(sender, e);
+                call = new Local(txtBoxOrigen.Text, duracion, txtBoxDestino.Text, costoF);
             }
+
+            try
+            {
+                llamada +=call;
+            }
+            catch (CentralitaException ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            BtnLimpiar_Click(sender, e);
         }
+
     }
 }

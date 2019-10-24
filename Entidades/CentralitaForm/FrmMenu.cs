@@ -40,11 +40,6 @@ namespace CentralitaForm
             formLlamador.ShowDialog();
         }
 
-        private void FrmMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnFacturacionTotal_Click(object sender, EventArgs e)
         {
             

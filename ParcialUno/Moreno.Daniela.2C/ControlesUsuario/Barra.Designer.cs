@@ -38,7 +38,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Name = "Barra";
             this.Size = new System.Drawing.Size(565, 335);
-            this.Load += new System.EventHandler(this.Barra_Load);
             this.ResumeLayout(false);
 
         }

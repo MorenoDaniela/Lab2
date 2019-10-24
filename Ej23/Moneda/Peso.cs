@@ -48,7 +48,7 @@ namespace Moneda
 
         public static explicit operator Dolar(Peso p)
         {
-            return new Dolar(p.GetCantidad() * Peso.GetCotizacion());
+            return new Dolar(p.GetCantidad() / Peso.GetCotizacion());
             //return (Dolar)(p.GetCantidad() / Dolar.GetCotizacion());
         }
 

@@ -70,7 +70,10 @@ namespace Entidades
         /// <returns></returns>
         protected override string GenerarInforme()
         {
-            return base.GenerarInforme();
+            StringBuilder cadena = new StringBuilder();
+            cadena.AppendFormat("{0}", base.GenerarInforme());
+            cadena.AppendFormat("{0}", MEDIDA);
+            return cadena.ToString();
         }
         #endregion
     }

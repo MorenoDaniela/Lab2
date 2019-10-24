@@ -74,6 +74,7 @@ namespace Entidades
             StringBuilder cadena = new StringBuilder();
             cadena.AppendFormat("{0}", base.GenerarInforme());
             cadena.AppendFormat("Tipo: {0} \n", this.tipo);
+            cadena.AppendFormat("Medida {0}", MEDIDA);
             return cadena.ToString();
         }
         #endregion
