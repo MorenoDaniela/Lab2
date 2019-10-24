@@ -87,5 +87,7 @@ namespace CentralitaForm
             Form formMostrar = new FrmMostrar(cadena.ToString());
             formMostrar.ShowDialog();
         }
+
+
     }
 }

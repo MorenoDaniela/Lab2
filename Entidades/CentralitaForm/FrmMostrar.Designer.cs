@@ -49,6 +49,7 @@
             this.Name = "FrmMostrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMostrar";
+
             this.ResumeLayout(false);
 
         }

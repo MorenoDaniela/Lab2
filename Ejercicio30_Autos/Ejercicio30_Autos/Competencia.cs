@@ -10,28 +10,70 @@ namespace Ejercicio30_Autos
     {
         private short cantidadCompetidores;
         private short cantidadVueltas;
-        private List<AutoF1> competidores;
+        private List<VehiculoDeCarrera> competidores;
+        private TipoCompetencia tipo;
 
-        private Competencia()
+        public enum TipoCompetencia
         {
-            competidores = new List <AutoF1>();
+            F1,
+            Motocross
         }
 
-        public Competencia(short vuelta, short competidores)
+        public VehiculoDeCarrera this[int i]
+        {
+            get
+            {
+                return competidores[i];
+            }
+        }
+        public TipoCompetencia Tipo
+        {
+            get { return this.tipo; }
+            set { tipo = value; }
+        }
+
+        public short CantidadVueltas
+        {
+            get { return this.cantidadVueltas; }
+            set { this.cantidadVueltas = value; }
+        }
+
+        public short CantidadCompetidores
+        {
+            get { return this.cantidadCompetidores; }
+            set { this.cantidadCompetidores = value; }
+        }
+        private Competencia()
+        {
+            competidores = new List <VehiculoDeCarrera>();
+        }
+
+        public Competencia(short vuelta, short competidores, TipoCompetencia tipo)
             : this()
         {
             this.cantidadVueltas = vuelta;
             this.cantidadCompetidores = competidores;
+            this.tipo = tipo;
         }
 
-        public static bool operator ==(Competencia c, AutoF1 a)
+        public string MostrarDatos()
+        {
+            StringBuilder cadena = new StringBuilder();
+            cadena.AppendFormat("Cantidad competidores: {0} Cantidad vueltas: {1} Tipo: {2} \n", this.cantidadCompetidores, this.cantidadVueltas, this.tipo);
+            return cadena.ToString();
+        }
+
+        public static bool operator ==(Competencia c, VehiculoDeCarrera v)
         {
             bool retorno = false;
-            if (!(c is null) && !(a is null))
+            if (!(c is null) && !(v is null))
             {
-                foreach (AutoF1 auto in c.competidores)
+                foreach (VehiculoDeCarrera vehi in c.competidores)
                 {
-                    if (auto == a)
+                    if (vehi is Motocross && c.tipo == Competencia.TipoCompetencia.Motocross)
+                    {
+                        retorno = true;
+                    }else if (vehi is AutoF1 && c.tipo==Competencia.TipoCompetencia.F1)
                     {
                         retorno = true;
                     }
@@ -41,24 +83,24 @@ namespace Ejercicio30_Autos
             return retorno;
         }
         
-        public static bool operator !=(Competencia c, AutoF1 a)
+        public static bool operator !=(Competencia c, VehiculoDeCarrera v)
         {
-            return !(c == a);
+            return !(c == v);
         }
 
-        public static bool operator +(Competencia c, AutoF1 a)
+        public static bool operator +(Competencia c, VehiculoDeCarrera v)
         {
             bool retorno = false;
-            if (!(c is null) && !(a is null))
+            if (!(c is null) && !(v is null))
             {
-                if (c.cantidadCompetidores>c.competidores.Count && c!=a)
+                if (c.cantidadCompetidores>c.competidores.Count && c==v)
                 {
-                    a.EnCompetencia = true;
+                    v.EnCompetencia = true;
                     Random numero = new Random();
                     int aux = numero.Next();
-                    a.CantidadCombustible = (short)aux;
-                    a.VueltasRestantes = c.cantidadVueltas;
-                    c.competidores.Add(a);
+                    v.CantidadCombustible = (short)aux;
+                    v.VueltasRestantes = c.cantidadVueltas;
+                    c.competidores.Add(v);
                     retorno = true;
                 }
             }

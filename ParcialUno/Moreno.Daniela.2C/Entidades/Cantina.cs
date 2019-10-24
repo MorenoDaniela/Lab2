@@ -42,7 +42,7 @@ namespace Entidades
 
         #region "Singleton"
         /// <summary>
-        /// Patron singleton, logra que el objeto Cantina sea instanciado una sola vez, si no existe lo instancia, si existe modifica su atributo espaciosTotales.
+        /// Patron singleton, logra que el objeto Cantina sea instanciado una sola vez si no existe lo instancia, si existe modifica su atributo espaciosTotales.
         /// </summary>
         /// <param name="espacios"></param>
         /// <returns></returns>

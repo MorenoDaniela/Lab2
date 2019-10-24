@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio30_Autos
 {
+#pragma warning disable CS0660, CS0661
     public class AutoF1 : VehiculoDeCarrera
     {
         private short caballosDeFuerza;

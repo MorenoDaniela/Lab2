@@ -32,9 +32,6 @@ namespace CentralitaForm
             richTextBox1.Text = cadena;
         }
 
-        private void FrmMostrar_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

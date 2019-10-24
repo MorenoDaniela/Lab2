@@ -99,6 +99,7 @@
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Central Telefonica";
+
             this.ResumeLayout(false);
 
         }

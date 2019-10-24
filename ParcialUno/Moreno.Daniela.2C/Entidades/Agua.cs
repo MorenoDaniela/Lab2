@@ -51,16 +51,17 @@ namespace Entidades
             int retorno;
             if (medida <= this.contenidoML)
             {
-                this.contenidoML = this.contenidoML - medida;
+                //this.contenidoML = this.contenidoML - medida;
                 retorno = medida;
 
             }
             else
             {
-                this.contenidoML = this.contenidoML - this.contenidoML;
+                //this.contenidoML = this.contenidoML - this.contenidoML;
                 retorno = this.contenidoML;
 
             }
+            this.contenidoML = this.contenidoML - retorno;
             return retorno;   
         }
 
