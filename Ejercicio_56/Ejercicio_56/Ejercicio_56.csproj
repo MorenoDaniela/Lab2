@@ -4,14 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F4728263-C77A-4977-8C56-3B0034FC637B}</ProjectGuid>
+    <ProjectGuid>{A5D90545-6271-42D6-8035-5C6CDF9F3719}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FrmCantina</RootNamespace>
-    <AssemblyName>FrmCantina</AssemblyName>
+    <RootNamespace>Ejercicio_56</RootNamespace>
+    <AssemblyName>Ejercicio_56</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,10 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,34 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormBar.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBar.Designer.cs">
-      <DependentUpon>FormBar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCantidadEspaciosCantina.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCantidadEspaciosCantina.Designer.cs">
-      <DependentUpon>FrmCantidadEspaciosCantina.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCantina.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCantina.Designer.cs">
-      <DependentUpon>FrmCantina.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormBar.resx">
-      <DependentUpon>FormBar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCantidadEspaciosCantina.resx">
-      <DependentUpon>FrmCantidadEspaciosCantina.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCantina.resx">
-      <DependentUpon>FrmCantina.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,7 +65,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,16 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ControlesUsuario\ControlesUsuario.csproj">
-      <Project>{52d0de5b-abfb-404a-b815-0493b4970f57}</Project>
-      <Name>ControlesUsuario</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{059c7a7d-7cde-4e6e-86eb-69372bf16309}</Project>
-      <Name>Entidades</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

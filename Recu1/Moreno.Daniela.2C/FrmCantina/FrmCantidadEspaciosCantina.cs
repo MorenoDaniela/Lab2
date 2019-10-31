@@ -19,7 +19,9 @@ namespace FrmCantina
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            btnCancelar.DialogResult= DialogResult.Cancel;
+            //this.DialogResult = DialogResult.Cancel;
+            
+            //btnCancelar.DialogResult= DialogResult.Cancel;
             this.Close();
             
   
@@ -27,16 +29,22 @@ namespace FrmCantina
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            btnAgregar.DialogResult = DialogResult.OK;
+            //this.DialogResult = DialogResult.OK;
+            //btnAgregar.DialogResult = DialogResult.OK;
             this.Close();
         }
 
         public short CantidadEspacios
         {
             get
-                {
+            {
                 return (short)nudCantidad.Value;
-                }
+            }
+        }
+
+        private void FrmCantidadEspaciosCantina_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

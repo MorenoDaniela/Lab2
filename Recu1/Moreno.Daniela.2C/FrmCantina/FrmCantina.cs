@@ -72,7 +72,7 @@ namespace FrmCantina
                 foreach (Botella item in this.barra1.Cantina.Botellas)//mirar
                 {
 
-                    cadena.AppendFormat("{0}", (string)item);
+                    cadena.AppendFormat("Botella: \n {0}", (string)item);
 
                 }
                 return cadena.ToString();
@@ -83,8 +83,9 @@ namespace FrmCantina
         {
             if (e.CloseReason == CloseReason.UserClosing)
             {
-                bool ret = e.Cancel;
+                e.Cancel = true;
             }
+            
         }
     }
 }

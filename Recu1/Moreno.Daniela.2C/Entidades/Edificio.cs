@@ -12,21 +12,21 @@ namespace Entidades
         private const short limiteCantinas = 2;
         private static Edificio singleton;
 
-        private Edificio ()
-        {
+
+       private Edificio ()  
+       {
             cantinas = new Cantina[limiteCantinas];
-        }
+       }
 
-        static Edificio()
-        {
-            if (singleton is null)
-            {
+       static Edificio()   
+       {
+           if (singleton is null)
+           {
                 singleton = new Edificio();
+           }
+       }
 
-            }
-        }
-
-        public Edificio GetBar()
+        public static Edificio GetBar()
         {
             return singleton;
         }
@@ -35,8 +35,8 @@ namespace Entidades
         {
             bool retorno = false;
             int i;
-            if (!(e is null) && !(c is null))
-            {
+            //if (!(e is null) && !(c is null))
+            //{
                 for (i=0;i<limiteCantinas;i++)
                 {
                     if (e.cantinas[i] is null)
@@ -45,7 +45,7 @@ namespace Entidades
                         retorno = true;
                     }
                 }
-            }
+            //}
             return retorno;
         }
     }

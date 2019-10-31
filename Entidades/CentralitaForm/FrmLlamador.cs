@@ -188,5 +188,9 @@ namespace CentralitaForm
             BtnLimpiar_Click(sender, e);
         }
 
+        private void FrmLlamador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

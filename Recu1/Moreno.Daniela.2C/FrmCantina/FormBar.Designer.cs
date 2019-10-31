@@ -41,7 +41,7 @@
             this.cantinaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(498, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(846, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -57,14 +57,14 @@
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.agregarToolStripMenuItem.Text = "Agregar";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // barrasToolStripMenuItem
             // 
             this.barrasToolStripMenuItem.Name = "barrasToolStripMenuItem";
-            this.barrasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.barrasToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.barrasToolStripMenuItem.Text = "Barras";
             this.barrasToolStripMenuItem.Click += new System.EventHandler(this.barrasToolStripMenuItem_Click);
             // 
@@ -72,11 +72,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 237);
+            this.ClientSize = new System.Drawing.Size(846, 546);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormBar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "El bar de Daniela Moreno";
+            this.Load += new System.EventHandler(this.FormBar_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -37,6 +37,7 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnAgregar.Location = new System.Drawing.Point(15, 86);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
@@ -83,7 +84,8 @@
             this.Controls.Add(this.btnAgregar);
             this.Name = "FrmCantidadEspaciosCantina";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmCantidadEspaciosCantina";
+            this.Text = "Espacios";
+            this.Load += new System.EventHandler(this.FrmCantidadEspaciosCantina_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

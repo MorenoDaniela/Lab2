@@ -273,7 +273,7 @@
             this.Name = "FrmLlamador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLlamador";
-
+            this.Load += new System.EventHandler(this.FrmLlamador_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
