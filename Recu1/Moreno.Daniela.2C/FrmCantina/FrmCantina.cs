@@ -37,7 +37,7 @@ namespace FrmCantina
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.barra1.SetCantina = new Cantina(10);
+            //this.barra1.SetCantina = new Cantina(10);
             //this.barra1.SetCantina = Cantina.GetCantina(10);
             cmbBotellaTipo.DataSource = Enum.GetValues(typeof(Botella.Tipo));
         }

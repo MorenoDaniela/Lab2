@@ -43,6 +43,7 @@ namespace Entidades
                     {
                         e.cantinas[i] = c;
                         retorno = true;
+                        break;
                     }
                 }
             //}

@@ -79,14 +79,11 @@ namespace Entidades
         /// <summary>
         /// Devuelve el porcentaje contenido de una botella.
         /// </summary>
-        public abstract float PorcentajeContenido();
-        /*
+        public abstract float PorcentajeContenido
+        
         {
-            get
-            {
-                return (contenidoML*100)/ capacidadML;
-            }
-        }*/
+            get;
+        }
         #endregion
 
         #region "Metodos"

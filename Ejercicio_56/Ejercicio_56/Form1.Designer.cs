@@ -33,12 +33,15 @@
             this.btnAbrir = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGuardar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGuardarComo = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.strip = new System.Windows.Forms.StatusStrip();
+            this.richText = new System.Windows.Forms.RichTextBox();
             this.EventoAbrir = new System.Windows.Forms.OpenFileDialog();
             this.EventoGuardarComo = new System.Windows.Forms.SaveFileDialog();
             this.EventoGuardar = new System.Windows.Forms.SaveFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.CantCaracteres = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
+            this.strip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -60,6 +63,7 @@
             this.stripMenuArchivo.Name = "stripMenuArchivo";
             this.stripMenuArchivo.Size = new System.Drawing.Size(60, 20);
             this.stripMenuArchivo.Text = "Archivo";
+            
             // 
             // btnAbrir
             // 
@@ -86,40 +90,51 @@
             this.btnGuardarComo.Text = "Guardar Como";
             this.btnGuardarComo.Click += new System.EventHandler(this.BtnGuardarComo_Click);
             // 
-            // statusStrip1
+            // strip
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 358);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(660, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
+            this.strip.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.strip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CantCaracteres});
+            this.strip.Location = new System.Drawing.Point(0, 358);
+            this.strip.Name = "strip";
+            this.strip.Size = new System.Drawing.Size(660, 22);
+            this.strip.TabIndex = 1;
             // 
-            // richTextBox1
+            // richText
             // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 24);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(660, 334);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.richText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richText.Location = new System.Drawing.Point(0, 24);
+            this.richText.Name = "richText";
+            this.richText.Size = new System.Drawing.Size(660, 334);
+            this.richText.TabIndex = 2;
+            this.richText.Text = "";
+            this.richText.TextChanged += new System.EventHandler(this.RichText_TextChanged);
             // 
             // EventoAbrir
             // 
             this.EventoAbrir.FileName = "EventoAbrir";
+            // 
+            // CantCaracteres
+            // 
+            this.CantCaracteres.Name = "CantCaracteres";
+            this.CantCaracteres.Size = new System.Drawing.Size(10, 17);
+            this.CantCaracteres.Text = " ";
             // 
             // Ej55
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 380);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.richText);
+            this.Controls.Add(this.strip);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Ej55";
             this.Text = "Ej56";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.strip.ResumeLayout(false);
+            this.strip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,11 +147,13 @@
         private System.Windows.Forms.ToolStripMenuItem btnAbrir;
         private System.Windows.Forms.ToolStripMenuItem btnGuardar;
         private System.Windows.Forms.ToolStripMenuItem btnGuardarComo;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.StatusStrip strip;
+        private System.Windows.Forms.RichTextBox richText;
         private System.Windows.Forms.OpenFileDialog EventoAbrir;
         private System.Windows.Forms.SaveFileDialog EventoGuardarComo;
         private System.Windows.Forms.SaveFileDialog EventoGuardar;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripStatusLabel CantCaracteres;
     }
 }
 

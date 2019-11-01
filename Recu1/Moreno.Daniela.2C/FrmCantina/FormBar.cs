@@ -28,22 +28,22 @@ namespace FrmCantina
             frmCantidad.MdiParent = this;
             frmCantidad.Show();
                       
-            //if (frmCantidad.DialogResult==DialogResult.OK)
-            //{
+            if (frmCantidad.DialogResult==DialogResult.OK)
+            {
                 int cantidad = frmCantidad.CantidadEspacios;
-                
+                Cantina cantina = new Cantina(cantidad);
                 FrmCantina frmCantina = new FrmCantina();
-            //frmCantina.Show();
+                frmCantina.Show();
 
             
                 if (this.edificio + frmCantina.GetCantina)
                 {
-                    MessageBox.Show("HOLA");
+                    
                     frmCantina.MdiParent = this;
                     frmCantina.Show();
                 }
 
-            //}
+            }
         }
 
         private void barrasToolStripMenuItem_Click(object sender, EventArgs e)
