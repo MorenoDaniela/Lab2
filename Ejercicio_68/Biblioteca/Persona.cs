@@ -21,8 +21,12 @@ namespace Biblioteca
             }
             set
             {
-                this.EventoString.Invoke("Apellido cambiado");
-                apellido = value;
+                if (this.apellido!=value)
+                {
+                    
+                    apellido = value;
+                    this.EventoString.Invoke(this.Mostrar());//preguntar cual es el fin de esto
+                }
             }
         }
 
@@ -40,15 +44,18 @@ namespace Biblioteca
             }
             set
             {
-                this.EventoString.Invoke("Nombre cambiado");
-                nombre = value;
+                if (this.nombre!=value)
+                {
+                    nombre = value;
+                    this.EventoString.Invoke(this.Mostrar());
+                }  
             }
         }
 
         public string Mostrar()
         {
             StringBuilder cadena = new StringBuilder();
-            cadena.AppendFormat("Nombre: {0} Apellido: {1}\r\n", this.nombre, this.apellido);
+            cadena.AppendFormat("Nombre: {0} Apellido: {1}\r\n", this.Nombre, this.Apellido);
             return cadena.ToString();
         }
 

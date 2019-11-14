@@ -30,16 +30,11 @@ namespace Ejercicio_68
             {
                 persona = new Persona();
                 persona.EventoString += NotificarCambio;
-                persona.Apellido = lblApellido.Text;
-                persona.Nombre = lblNombre.Text;
                 btnCrear.Text = "Actualizar";
                 
-            }else //if (persona.Nombre!=lblNombre.Text && persona.Apellido!=lblApellido.Text)
-            {
-                persona.EventoString += NotificarCambio;
-                persona.Apellido = lblApellido.Text;
-                persona.Nombre = lblNombre.Text;
             }
+            persona.Apellido = txtApellido.Text;
+            persona.Nombre = txtNombre.Text;
         }
     }
 }
