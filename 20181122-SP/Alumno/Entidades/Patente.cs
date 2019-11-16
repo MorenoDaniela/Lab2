@@ -36,7 +36,7 @@ namespace Entidades
             }
             set
             {
-                this.codPatente = value;
+                this.codPatente = value;//validar?
             }
         }
 
@@ -48,7 +48,7 @@ namespace Entidades
             }
             set
             {
-                this.tipoCodigo = value;
+                this.tipoCodigo = value;//validar?
             }
         }
 
