@@ -28,6 +28,14 @@ namespace Archivos
         }
         public void Leer(string archivo, out T datos)
         {
+            
+            datos = default(T);
+            XmlTextReader reader = new XmlTextReader(archivo);
+            XmlSerializer ser = new XmlSerializer(typeof(T));
+            
+            datos = (T)ser.Deserialize(reader);
+            reader.Close();
+            /*
             bool flag = false;
             datos = default(T);
             XmlSerializer ser = new XmlSerializer(typeof(T));
@@ -45,7 +53,7 @@ namespace Archivos
             {
                 if (flag)
                     sr.Close();
-            }
+            }*/
         }
     }
 }

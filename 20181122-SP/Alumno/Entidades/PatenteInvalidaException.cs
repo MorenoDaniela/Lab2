@@ -8,7 +8,11 @@ namespace Entidades
 {
     public class PatenteInvalidaException : Exception
     {
-        public PatenteInvalidaException(string msj) : base(msj)
+        public PatenteInvalidaException(string msj) : this ("Patente invalida", null)
+        {
+
+        }
+        public PatenteInvalidaException(string msj, Exception inner) : base (msj,inner)
         {
 
         }

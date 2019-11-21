@@ -36,6 +36,7 @@ namespace Entidades
             }
             set
             {
+                //this.codPatente = PatenteStringExtension.ValidarPatente(value);
                 this.codPatente = value;//validar?
             }
         }

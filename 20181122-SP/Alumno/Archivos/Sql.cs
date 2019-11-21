@@ -23,54 +23,47 @@ namespace Archivos
         public void Guardar (string tabla, Queue<Patente> datos)
         {
             conexion = new SqlConnection(tabla);
+            //comando = new SqlCommand();
             conexion.Open();
             StringBuilder cadena = new StringBuilder();
-            foreach (Patente pat in datos)//datos deberia tener una propiedad para acceder a la lista
+            
+            foreach (Patente pat in datos)
             {
-                //cadena.AppendFormat("INSERT INTO Votaciones(nombreLey,afirmativos,negativos,abstenciones,nombreAlumno) VALUES('{0}',{1},{2},{3},'DanielaMoreno')", datos.NombreLey, datos.Afirmativo, datos.Negativo, datos.Abstencion);
-                //aca fijarse pat. algo
+                cadena.AppendFormat("INSERT INTO patentes-sp-2018 (patente, tipo) VALUES ({0} {1})", pat.CodigoPatente, pat.TipoCodigo);
+                comando = new SqlCommand(cadena.ToString(), conexion);
             }
 
-            comando = new SqlCommand(cadena.ToString(), conexion);
+            
             comando.ExecuteNonQuery();
             conexion.Close();
         }
 
         public void Leer(string tabla, out Queue<Patente> datos)
         {
-            /*
-             *  public static List<Cliente> LeerClientes()
-            {
-                using (SqlConnection connection = new SqlConnection(DAO.connectionString))
+
+            conexion = new SqlConnection(tabla);
+            //using (conexion = new SqlConnection(tabla))
+            //{
+                datos = new Queue<Patente>();
+                string coman = "SELECT * FROM Patentes";
+                comando = new SqlCommand(coman, conexion);
+                conexion.Open();
+                SqlDataReader dataReader = comando.ExecuteReader();
+
+                while (dataReader.Read())
                 {
-                    string comando = "SELECT id, nombre, apellido, dni, fecha_nacimiento FROM CLIENTES;";
-                    SqlCommand command = new SqlCommand(comando, connection);
-                    connection.Open();
-                    SqlDataReader dataReader = command.ExecuteReader();
-                    List<Cliente> clientes = new List<Cliente>();
+                    
+                    string patente = dataReader.GetString(0);
+                    string tipo = dataReader.GetString(1);
 
-                    while (dataReader.Read())
-                    {
-                        int id = dataReader.GetInt32(0);
-                        string nombre = dataReader.GetString(1);
-                        string apellido = dataReader.GetString(2);
-                        string dni = dataReader.GetString(3);
-                        DateTime? fechaNacimiento = null;
-                        if (!dataReader.IsDBNull(4))
-                        {
-                            fechaNacimiento = dataReader.GetDateTime(4);
-                        }
+                    Patente pat = PatenteStringExtension.ValidarPatente(patente);
 
-                        Cliente cliente = new Cliente(id, nombre, apellido, dni, fechaNacimiento);
-                        clientes.Add(cliente);
-                    }
-                    return clientes;
-                }                
-            }
-            */
-            datos = null;
+                    datos.Enqueue(pat);
+
+                }
+            conexion.Close();
+            //}
+
         }
-
-
     }
 }

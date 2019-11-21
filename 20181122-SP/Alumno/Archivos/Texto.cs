@@ -12,18 +12,16 @@ namespace Archivos
     {
         public void Guardar(string archivo, Queue <Patente> datos)
         {
-            //try
-            //{
-                using (StreamWriter str = new StreamWriter(archivo, File.Exists(archivo)))
+
+            using (StreamWriter str = new StreamWriter(archivo, File.Exists(archivo)))
+            {
+                foreach (Patente p in datos)
                 {
-                    str.WriteLine(datos);
-                   // return true;
+                    str.WriteLine(p);
                 }
-            //}
-            //catch (Exception innerException)
-            //{
-             //   throw new ArchivosException(innerException);
-            //}
+               
+            }
+            
         }
 
         public void Leer(string archivo, out Queue<Patente> datos)
@@ -34,7 +32,7 @@ namespace Archivos
             while (!sr.EndOfStream)
             {
                 Patente patente = new Patente();
-                patente.CodigoPatente = sr.ReadLine();
+                PatenteStringExtension.ValidarPatente(sr.ReadLine());
                 datos.Enqueue(patente);
             }
 

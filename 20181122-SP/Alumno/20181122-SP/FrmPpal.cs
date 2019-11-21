@@ -51,13 +51,31 @@ namespace _20181122_SP
         private void btnTxt_Click(object sender, EventArgs e)
         {
             Texto texto = new Texto();
-            texto.Leer(AppDomain.CurrentDomain.BaseDirectory + "patentes.txt", out cola);
+            try
+            {
+                texto.Leer(AppDomain.CurrentDomain.BaseDirectory + "patentes.txt", out cola);
+            }catch (PatenteInvalidaException excep)
+            {
+                MessageBox.Show(excep.Message);
+            }
+            
             IniciarSimulación();
         }
 
         private void btnSql_Click(object sender, EventArgs e)
         {
+            Sql sq = new Sql();
+            try
+            {
+                string connectionStr = "server=DELL-PC\\SQLEXPRESS; database=patentes-sp-2018;Integrated Security=True";
+                //string connectionStr = "Data Source=DELL-PC\\SQLEXPRESS; Initial Catalog =patentes-sp-2018; Integrated Security = True";
 
+                sq.Leer(connectionStr, out cola);
+            }catch (PatenteInvalidaException exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
+            IniciarSimulación();
         }
 
         private void FinalizarSimulacion()
