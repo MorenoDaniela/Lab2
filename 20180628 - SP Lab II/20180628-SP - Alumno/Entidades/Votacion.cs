@@ -11,6 +11,7 @@ namespace Entidades
     {
         public delegate void DelegadoVoto(string senador, Votacion.EVoto voto);
         public enum EVoto { Afirmativo, Negativo, Abstencion, Esperando }
+        public event DelegadoVoto EventoVotoEfectuado;
 
         private string nombreLey;
 
@@ -55,7 +56,7 @@ namespace Entidades
 
         }
 
-        public event DelegadoVoto EventoVotoEfectuado;
+        
 
         public Votacion()
         {
