@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entidades;
 
 namespace Entidades
 {
@@ -16,6 +17,11 @@ namespace Entidades
         private short posicionActual;
         private short radioRespectoSol;
         private object objetoAsociado;
+
+        public Planeta()
+        {
+
+        }
 
         public short VelocidadTraslacion
         {
@@ -93,7 +99,7 @@ namespace Entidades
         {
             do
             {
-                
+                this.InformarAvance(this, new PlanetaEventsArgs(this.Avanzar(), this.radioRespectoSol));
                 System.Threading.Thread.Sleep(60 + this.velocidadTraslacion);
             } while (true);
         }

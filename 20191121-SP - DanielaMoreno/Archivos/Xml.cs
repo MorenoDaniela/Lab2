@@ -15,7 +15,7 @@ namespace Archivos
         {
             get
             {
-                return "agregar direct";
+                return Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             }
         }
 
@@ -24,9 +24,9 @@ namespace Archivos
             bool retorno = false;
             StringBuilder cadena = new StringBuilder();
             cadena.Append(GetDirectoryPath);
-            if (File.Exists(nombreArchivo))
+            if (File.Exists(cadena + nombreArchivo))
             {
-                cadena.Append(nombreArchivo);
+                //cadena.Append(nombreArchivo);
                 retorno = true;
             }
             return retorno; ;

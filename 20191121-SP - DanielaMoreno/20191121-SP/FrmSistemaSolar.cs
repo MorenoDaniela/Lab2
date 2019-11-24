@@ -22,7 +22,8 @@ namespace _20191121_SP
         private List<Planeta> planetas;
         private List<Thread> animaciones;
         Xml<List<Planeta>> xml;
-        public event InformacionDeAvance evento;
+        //public event InformacionDeAvance evento;
+        
         
 
         public FrmSistemaSolar()
@@ -45,7 +46,7 @@ namespace _20191121_SP
             foreach (Planeta p in this.planetas)
             {
                 // Asociar Evento
-               // p.InformarAvance += 
+                p.InformarAvance += DibujarAvancePlaneta;
                 
                 PictureBox pic = (PictureBox)p.ObjetoAsociado;
                 pic.Location = this.CalcularUbicacion(pic.Location, p.PosicionActual, p.RadioRespectoSol);
@@ -178,10 +179,9 @@ namespace _20191121_SP
             // Invocación del hilo principal
             if (pic.InvokeRequired)
             {
-                if (this.InvokeRequired)
-                {
-                    //DibujarAvancePlaneta dib = new DibujarAvancePlaneta(this.CalcularUbicacion);
-                }
+                InformacionDeAvance d = new InformacionDeAvance(this.DibujarAvancePlaneta);
+                object[] parametros = new object[] { sender, e };
+                pic.Invoke(d, parametros);
             }
             else
             {
