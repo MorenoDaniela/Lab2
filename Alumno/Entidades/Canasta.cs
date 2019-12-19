@@ -46,17 +46,17 @@ namespace Entidades
                 if (reinoVegetal is Fruta )
                 {
                     cadena = "Fruta";
-                    auxiliar = string.Format("El elemento es del tipo {0}. Se esperaba {1}. ", cadena,c.ToString());//mmm
+                    auxiliar = string.Format("El elemento es del tipo {0}. Se esperaba {1}. ", cadena,c);//mmm
                 }
                 else if (reinoVegetal is Verdura )
                 {
                     cadena = "Verdura";
-                    auxiliar = string.Format("El elemento es del tipo {0}. Se esperaba {1}. ", cadena,c.ToString());
+                    auxiliar = string.Format("El elemento es del tipo {0}. Se esperaba {1}. ", cadena, c);
                 }
                 else
                 {
                     cadena = "Carnibora";
-                    auxiliar = string.Format("El elemento es del tipo {0}. Se esperaba {1}. ", cadena,c.ToString());
+                    auxiliar = string.Format("El elemento es del tipo {0}. Se esperaba {1}. ", cadena, c);
                 }
 
                 throw new NoAgregaException(auxiliar);

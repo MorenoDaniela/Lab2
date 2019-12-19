@@ -30,12 +30,13 @@ namespace Entidades
                     
                 }
 
-                writer = new XmlTextWriter(archivoXml, Encoding.UTF8);
+                writer = new XmlTextWriter(aux + "\\" + archivoXml, Encoding.UTF8);
                 XmlSerializer ser = new XmlSerializer(typeof(Fruta));
-                ser.Serialize(writer, fruta.MostrarDatos());//chequear si llamar a mostrardatos
+                ser.Serialize(writer, fruta);
+
                 BinaryFormatter formatter = new BinaryFormatter();
-                stream = new FileStream(archivoBin, FileMode.Create, FileAccess.Write, FileShare.None);
-                formatter.Serialize(stream, fruta);//chequear si llamar a mostrardatos
+                stream = new FileStream(aux + "\\" + archivoBin, FileMode.Create, FileAccess.Write, FileShare.None);
+                formatter.Serialize(stream, fruta);
 
                 return fruta.MostrarDatos();
             }

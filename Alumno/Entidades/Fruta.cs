@@ -10,7 +10,10 @@ namespace Entidades
     public class Fruta : ReinoVegetal, IVegetales
     {
         private ConsoleColor color;
-        
+        public Fruta()
+        {
+
+        }
         public Fruta(float valor, Gusto gusto, ConsoleColor color) : base (valor,gusto)
         {
             this.color = color;

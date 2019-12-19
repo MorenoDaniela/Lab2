@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    [Serializable]
     public abstract class ReinoVegetal
     {
         // Tipos del enumerado Dulce, Salado, Toxica
@@ -14,12 +15,15 @@ namespace Entidades
         protected float valor;
         protected Gusto gusto;
 
-        
+        public ReinoVegetal()
+        {
+
+        }
         static ReinoVegetal()
         {
             calcularValor = new Random();
         }
-        public ReinoVegetal(Gusto gusto) : this(calcularValor.Next(1, 100),gusto)
+        public ReinoVegetal(Gusto gusto) : this(calcularValor.Next(1, 100), gusto)
         {
             
         }

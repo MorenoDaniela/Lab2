@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 using Entidades;
 
@@ -80,9 +81,9 @@ namespace Final
             Carnibora v5 = new Carnibora((float)14.5, ReinoVegetal.Gusto.Toxica, Carnibora.Captura.Combinada);
             Carnibora v6 = new Carnibora((float)1.2, ReinoVegetal.Gusto.Toxica, Carnibora.Captura.Pelos, 10);
 
-            MessageBox.Show("Carnibora y Verdura: {0}" + (v5 == v4));
-            MessageBox.Show("Verdura y Verdura: {0}" + (v3 == v4));
-            MessageBox.Show("Carnibora y Carnibora: {0}" + (v5 == v6));
+            MessageBox.Show("Carnibora y Verdura: " + (v5 == v4));
+            MessageBox.Show("Verdura y Verdura: " + (v3 == v4));
+            MessageBox.Show("Carnibora y Carnibora: " + (v5 == v6));
         }
 
         private void btnPunto4_Click(object sender, EventArgs e)
@@ -170,8 +171,9 @@ namespace Final
 
         private void btnPunto8_Click(object sender, EventArgs e)
         {
-           // MessageBox.Show("Lanzar mediante un hilo el método ProbarTodo. Comentar este MessageBox.");
-            
+            Thread t = new Thread(ProbarTodo);
+            // MessageBox.Show("Lanzar mediante un hilo el método ProbarTodo. Comentar este MessageBox.");
+            t.Start();
         }
 
         private void ProbarTodo()
