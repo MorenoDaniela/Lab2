@@ -21,7 +21,7 @@ namespace FrmCantina
         {
             //this.DialogResult = DialogResult.Cancel;
             
-            //btnCancelar.DialogResult= DialogResult.Cancel;
+            if (btnCancelar.DialogResult == DialogResult.Cancel)
             this.Close();
             
   
@@ -30,7 +30,7 @@ namespace FrmCantina
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             //this.DialogResult = DialogResult.OK;
-            //btnAgregar.DialogResult = DialogResult.OK;
+            if(btnAgregar.DialogResult == DialogResult.OK)
             this.Close();
         }
 

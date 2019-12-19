@@ -44,12 +44,12 @@ namespace Entidades
         #endregion
 
         #region "Metodos"
-        public override float PorcentajeContenido()
+        public override float PorcentajeContenido
         {
-            //get
-            //{
+            get
+            {
                 return (contenidoML * 90) / capacidadML;
-            //}
+            }
         }
         /// <summary>
         /// Implementacion del método de la clase padre ServirMedida.

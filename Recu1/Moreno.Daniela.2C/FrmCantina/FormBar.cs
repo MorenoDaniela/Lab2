@@ -26,10 +26,11 @@ namespace FrmCantina
             
             FrmCantidadEspaciosCantina frmCantidad = new FrmCantidadEspaciosCantina();
             frmCantidad.MdiParent = this;
-            frmCantidad.Show();
+            
                       
             if (frmCantidad.DialogResult==DialogResult.OK)
             {
+                frmCantidad.Show();
                 int cantidad = frmCantidad.CantidadEspacios;
                 Cantina cantina = new Cantina(cantidad);
                 FrmCantina frmCantina = new FrmCantina();
@@ -60,6 +61,11 @@ namespace FrmCantina
         private void FormBar_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void MenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
